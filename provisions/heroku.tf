@@ -11,7 +11,7 @@ variable "heroku_email" {
 
 # Create new app
 resource "heroku_app" "staging" {
-  name   = "stagingprojectName"
+  name   = "stagingquizzpursuit"
   region = "eu"
 
   buildpacks = [
@@ -21,7 +21,7 @@ resource "heroku_app" "staging" {
 
 # Create new app
 resource "heroku_app" "production" {
-  name   = "productionprojectName"
+  name   = "productionquizzpursuit"
   region = "eu"
 
   buildpacks = [
@@ -31,19 +31,19 @@ resource "heroku_app" "production" {
 }
 
 # Create a Heroku pipeline
-resource "heroku_pipeline" "projectNamepipeline" {
-  name = "projectNamepipeline"
+resource "heroku_pipeline" "quizzpursuitpipeline" {
+  name = "quizzpursuitpipeline"
 }
 
 # Couple apps to different pipeline stages
 resource "heroku_pipeline_coupling" "staging" {
   app      = heroku_app.staging.name
-  pipeline = heroku_pipeline.projectNamepipeline.id
+  pipeline = heroku_pipeline.quizzpursuitpipeline.id
   stage    = "staging"
 }
 
 resource "heroku_pipeline_coupling" "production" {
   app      = heroku_app.production.name
-  pipeline = heroku_pipeline.projectNamepipeline.id
+  pipeline = heroku_pipeline.quizzpursuitpipeline.id
   stage    = "production"
 }
