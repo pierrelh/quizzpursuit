@@ -3,7 +3,7 @@
 .page-logo {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .page-logo h1 {
