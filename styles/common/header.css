@@ -1,5 +1,11 @@
 /* ------------ Header ------------ */
 
+.page-logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 .page-logo h1 {
     font-family: 'Faster One', cursive;
     font-size: 48px;

@@ -1,6 +1,8 @@
         <div class="homepage-body">
 
-            <div class="start-button">Lancer un quizz</div>
+            <div class="start-button">
+                <a href="/quizz.php">Lancer un quizz</a>
+            </div>
 
             <div class="leaderboard">
                 <p>Leaderboard</p>
