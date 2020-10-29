@@ -1,4 +1,3 @@
-
         <div class="homepage-body">
 
             <div class="start-button">
