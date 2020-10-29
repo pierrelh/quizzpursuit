@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php
 
-  </body>
-</html>
+  require __DIR__ . '/pages/header.php';
+  require __DIR__ . '/pages/quizz.php';
+  require __DIR__ . '/pages/index.php';
+  
+?>
