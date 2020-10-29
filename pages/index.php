@@ -24,3 +24,5 @@
     </body>
 
 </html>
+
+<script src="scripts/call.js"></script>
