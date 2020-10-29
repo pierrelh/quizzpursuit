@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Ouiches</title>
+        <title>Quizz Pursuit</title>
         <link rel="stylesheet" type="text/css" href="styles/common/master.css"/>
         <link rel="stylesheet" type="text/css" href="styles/common/header.css"/>
         <link rel="stylesheet" type="text/css" href="styles/common/quizz.css"/>
