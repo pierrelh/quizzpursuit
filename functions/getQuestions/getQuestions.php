@@ -5,11 +5,13 @@
 
     $sqlRequest = "SELECT *
                    FROM quizz_questions
-                   ORDER BY word_id ASC";
+                   ORDER BY RANDOM() 
+                   LIMIT 10";
     $result = pg_query($db, $sqlRequest);
+
     if (!empty($result)) {
-    $val = pg_fetch_all($result);
-    print json_encode($val);
+        $val = pg_fetch_all($result);
+        print json_encode($val);
     }else {
         print "false";
     }
