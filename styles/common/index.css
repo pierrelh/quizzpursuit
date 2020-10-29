@@ -18,8 +18,27 @@
     width: fit-content;
     background-color: black;
     color: white;
+    padding: 10px;
+    text-decoration: none;
 }
 
-.homepage-body .leaderboard-list {
+.homepage-body .leaderboard-list ul {
     display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.homepage-body .leaderboard-list ul:first-child{
+    font-size: 24px;
+    color: goldenrod;
+}
+
+.homepage-body .leaderboard-list ul:nth-child(2) {
+    font-size: 21px;
+    color: silver;
+}
+
+.homepage-body .leaderboard-list ul:nth-child(3) {
+    font-size: 18px;
+    color: blue;
 }
