@@ -1,6 +1,6 @@
 <?php
-
-    function mapRandomQuestion($question) {
+    //Map the random question for the API
+    function mapQuestion($question) {
         $isFirst = false;
         $isSecond = false;
         $isThird = false;
