@@ -11,8 +11,7 @@
         $data = pg_fetch_all($result);
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/question.php");
-        array_map('mapQuestion', $data);
-        print json_encode($data);
+        print json_encode(array_map('mapQuestion', $data));
     }else {
         print "false";
     }
