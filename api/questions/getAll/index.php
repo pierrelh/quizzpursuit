@@ -9,6 +9,7 @@
 
     if (!empty($result)) {
         $data = pg_fetch_all($result);
+        $data = $data[0];
         print_r($data);
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/question.php");
