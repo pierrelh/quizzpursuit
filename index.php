@@ -25,9 +25,9 @@
       include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
       $parameter = getParameter();
       if ($parameter == false) {
-        require __DIR__ . '/api/quesions/getAllQuestions.php';
+        require __DIR__ . '/api/questions/getAllQuestions.php';
       }else {
-        require __DIR__ . '/api/quesions/getQuestionsParam.php';
+        require __DIR__ . '/api/questions/getQuestionsParam.php';
       }
       break;
     
