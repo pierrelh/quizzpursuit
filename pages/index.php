@@ -1,7 +1,7 @@
         <div class="homepage-body">
 
             <div class="start-button">
-                <a href="<?php echo $link ?>/quizz.php">Lancer un quizz</a>
+                <a href="<?php echo $link ?>/quizz">Lancer un quizz</a>
             </div>
 
             <div class="leaderboard">
