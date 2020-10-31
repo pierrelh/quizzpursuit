@@ -20,6 +20,10 @@
     case '/api/questions/random/':
       require __DIR__ . '/api/questions/getRandom/index.php';
       break;
+    
+    case '/api/questions/':
+      require __DIR__ . '/api/questions/getAll/index.php';
+      break;
 
     case (preg_match('#/api/questions#', $uri) ? true : false):
       include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
