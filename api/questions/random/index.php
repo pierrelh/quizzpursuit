@@ -11,7 +11,7 @@
 
     if (!empty($result)) {
         $data = pg_fetch_all($result);
-        print json_encode($data);
+        print_r (json_encode($data));
     }else {
         print "false";
     }
