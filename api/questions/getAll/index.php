@@ -11,8 +11,8 @@
         $data = pg_fetch_all($result);
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/question.php");
-        foreach ($data as $key => $value) {
-            array_map('mapQuestion', $value);
+        for ($i=0; $i < count($data); $i++) { 
+            array_map('mapQuestion', $data[$i]);
         }
         print json_encode($data);
     }else {
