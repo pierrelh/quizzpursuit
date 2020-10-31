@@ -13,7 +13,7 @@
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/question.php");
         foreach ($data as $key => $value) {
-            array_map('mapQuestion', $data[$value]);
+            array_map('mapQuestion', $key);
         }
         print json_encode($data);
     }else {
