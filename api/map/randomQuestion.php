@@ -36,7 +36,7 @@
                 $question['fourth_choice'] => $isFourth
             ]
         ];
-        return json_encode($data);
+        return $data;
     }
 
 ?>
