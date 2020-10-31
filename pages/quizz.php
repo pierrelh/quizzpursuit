@@ -1,4 +1,3 @@
-<?php require __DIR__ . '/header.php'; ?>
 
         <div class="quizz-body">
 
