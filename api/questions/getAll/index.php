@@ -9,10 +9,11 @@
 
     if (!empty($result)) {
         $data = pg_fetch_all($result);
+        print_r($data);
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/question.php");
         foreach ($data as $key => $value) {
-            array_map('mapQuestion', $data[$key]);
+            array_map('mapQuestion', $data[$value]);
         }
         print json_encode($data);
     }else {
