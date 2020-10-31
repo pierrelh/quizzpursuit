@@ -13,7 +13,7 @@
         $data = pg_fetch_all($result);
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/randomQuestion.php");
-        print (array_map('mapRandomQuestion', $data));
+        print json_encode((array_map('mapRandomQuestion', $data)));
     }else {
         print "false";
     }
