@@ -28,7 +28,7 @@
     case (preg_match('#/api/questions#', $uri) ? true : false):
       include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
       $parameter = getParameter();
-      if ($parameter == false) {
+      if (!$parameter) {
         require __DIR__ . '/api/questions/getAll/index.php';
       }else {
         require __DIR__ . '/api/questions/getParam/index.php';
