@@ -18,14 +18,16 @@
 
     //Get a random question API
     case '/api/questions/random/':
+    case '/api/questions/random':
       require __DIR__ . '/api/app/questions/getRandom.php';
       break;
     
     case '/api/questions/':
+    case '/api/questions':
       require __DIR__ . '/api/app/questions/getAll.php';
       break;
 
-    case (preg_match('#/api/questions#', $uri) ? true : false):
+    case (preg_match('#/api/questions/#', $uri) ? true : false):
       include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
       $parameter = getParameter();
       if (!$parameter) {
