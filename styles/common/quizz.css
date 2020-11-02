@@ -28,6 +28,7 @@
     background-size: contain;
     width: 200px;
     height: 100px;
+    z-index: -1;
 }
 
 .quizz-body .answers .image.image1 {
