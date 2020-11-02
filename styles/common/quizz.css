@@ -20,15 +20,24 @@
 
 .quizz-body .answers .image {
     position: absolute;
+    background-position: center;
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .quizz-body .answers .image.image1 {
-    background-image: url(../../images/quizz1.svg);
+    background-image: url('../../images/quizz1.svg');
+    width: 300px;
+    height: 200px;
 }
 
 .quizz-body .answers .image.image2 {
-    background-image: url(../../images/quizz2.svg);
+    background-image: url('../../images/quizz2.svg');
+    width: 300px;
+    height: 200px;
 }
 
 .quizz-body .answers ul {
