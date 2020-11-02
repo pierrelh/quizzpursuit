@@ -21,8 +21,9 @@
 }
 
 .quizz-body .answers .answer-list li {
-    padding: 10px;
+    padding: 10px 20px;
     margin: 5px;
-    background-color: #f3eac2;
+    background-color: #ec524b;
     font-size: 15px;
+    border-radius: 5px;
 }

@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo $link ?>/styles/common/index.css"/>
         
         <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"> -->
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
