@@ -1,1 +1,26 @@
 /* ------------ Quizz ------------ */
+
+.quizz-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quizz-body .question {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.quizz-body .answers ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quizz-body .answers .answer-list {
+    padding: 10px;
+    margin: 5px;
+    background-color: #FFA07A;
+}
