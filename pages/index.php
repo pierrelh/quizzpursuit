@@ -5,7 +5,11 @@
             </div>
 
             <div class="leaderboard">
-                <h2>Leaderboard</h2>
+                <h2>
+                    <span class="mdi mdi-trophy"></span>
+                    Leaderboard
+                    <span class="mdi mdi-trophy"></span>
+                </h2>
                 <ul class=leaderboard-list>
                     <li>#1 username</li>
                     <li>#2 username</li>
