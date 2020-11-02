@@ -6,8 +6,9 @@
     margin: 20px;
 }
 
-.page-logo h1 {
+.page-logo h1 a {
     font-family: 'Faster One', cursive;
     font-size: 48px;
     letter-spacing: 2px;
+    text-decoration: none;
 }

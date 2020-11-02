@@ -5,7 +5,7 @@
             </div>
 
             <div class="leaderboard">
-                <p>Leaderboard</p>
+                <h2>Leaderboard</h2>
                 <ul class=leaderboard-list>
                     <li>#1 username</li>
                     <li>#2 username</li>
