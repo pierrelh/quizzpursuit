@@ -14,7 +14,7 @@
 .homepage-body .start-button a {
     display: block;
     font-size: 23px;
-    background-color: black;
+    background-color: #ec524b;
     color: white;
     padding: 18px;
     text-decoration: none;
@@ -25,13 +25,13 @@
 }
 
 .homepage-body .start-button a:hover {
-    background-color: white;
+    background-color: #f5b461;
     color: black;
 }
 
 .homepage-body>.leaderboard>h2 {
     font-size: 22px;
-    background-color: #FFA07A;
+    background-color: #f3eac2;
     padding: 15px;
     text-transform: uppercase;
     color: white;
