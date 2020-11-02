@@ -21,5 +21,5 @@
     <body>
 
         <div class="page-logo">
-            <h1>Quizz Pursuit</h1>
+            <h1><a href="<?php echo $link ?>/index">Quizz Pursuit</a></h1>
         </div>
