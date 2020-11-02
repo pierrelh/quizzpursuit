@@ -13,12 +13,14 @@
 
 .homepage-body .start-button a {
     display: block;
-    font-size: 25px;
+    font-size: 23px;
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 18px;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.3s;
+    border-radius: 20px;
+    text-transform: capitalize;
 }
 
 .homepage-body .start-button a:hover {
@@ -26,18 +28,16 @@
     color: black;
 }
 
-.homepage-body .leaderboard h2 {
+.homepage-body>.leaderboard>h2 {
     font-size: 25px;
     background-color: #FFA07A;
     padding: 15px;
 }
 
-/* .homepage-body .leaderboard-list ul {
-    display: flex;
-    flex-direction: column;
+.homepage-body .leaderboard-list li {
     font-size: 16px;
     list-style: none;
-} */
+}
 
 .homepage-body .leaderboard-list li:first-child{
     font-size: 24px;
