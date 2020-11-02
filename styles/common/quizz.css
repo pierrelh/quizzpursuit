@@ -13,6 +13,24 @@
     margin: 20px;
 }
 
+.quizz-body .answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.quizz-body .answers .image {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.quizz-body .answers .image.image1 {
+    background-image: url(../../images/quizz1.svg);
+}
+
+.quizz-body .answers .image.image2 {
+    background-image: url(../../images/quizz2.svg);
+}
+
 .quizz-body .answers ul {
     display: flex;
     flex-direction: column;
