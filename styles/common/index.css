@@ -8,6 +8,12 @@
     margin-bottom: 60px;
 }
 
+.homepage-body .image-start {
+    width: 220px;
+    height: auto;
+    margin-top: 15px;
+}
+
 .homepage-body .start-button {
     margin: 40px 20px 45px 20px;
 }
@@ -32,10 +38,14 @@
 .homepage-body>.leaderboard>h2 {
     font-size: 20px;
     background-color: black;
-    padding: 15px 30px;
+    padding: 15px 20px;
     text-transform: uppercase;
     color: white;
     font-weight: bold;
+}
+
+.homepage-body>.leaderboard>h2>.mdi {
+    margin: 0 10px;
 }
 
 .homepage-body .leaderboard-list {
@@ -58,38 +68,26 @@
     justify-content: center;
 }
 
-.homepage-body .leaderboard-list li:first-child{
-    font-size: 24px;
+.homepage-body .leaderboard-list li::before {
+    content: "🏁";
+    width: 20px;
+    height: fit-content;
+    font-size: 25px;
+    margin-right: 10px;
 }
 
 .homepage-body .leaderboard-list li:first-child::before {
     content: "🥇";
-    width: 20px;
-    height: fit-content;
-    font-size: 25px;
-    margin-right: 10px;
-}
-
-.homepage-body .leaderboard-list li:nth-child(2) {
-    font-size: 21px;
 }
 
 .homepage-body .leaderboard-list li:nth-child(2)::before {
     content: "🥈";
-    width: 20px;
-    height: fit-content;
-    font-size: 25px;
-    margin-right: 10px;
-}
-
-.homepage-body .leaderboard-list li:nth-child(3) {
-    font-size: 18px;
 }
 
 .homepage-body .leaderboard-list li:nth-child(3)::before {
     content: "🥉";
-    width: 20px;
-    height: fit-content;
-    font-size: 25px;
-    margin-right: 10px;
+}
+
+.homepage-body .leaderboard-list li:last-child {
+    border-bottom: solid 3px black;
 }
