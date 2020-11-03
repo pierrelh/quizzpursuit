@@ -7,19 +7,37 @@
     flex-direction: column;
 }
 
+.homepage-body .image {
+    position: absolute;
+    background-position: center;
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 100px;
+    z-index: -1;
+}
+
+.homepage-body .image.start-image {
+    background-image: url('../../images/question.svg');
+    top: 100px;
+}
+
 .homepage-body .start-button {
-    margin: 20px;
+    margin: 40px 20px 45px 20px;
 }
 
 .homepage-body .start-button a {
     display: block;
-    font-size: 23px;
+    font-size: 24px;
     background-color: #ec524b;
     color: white;
-    padding: 18px;
+    padding: 16px 32px;
     text-decoration: none;
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
 }
