@@ -1,8 +1,8 @@
 
         <div class="quizz-body">
 
-            <div class="image-question">
-                <img src="../../images/question.svg" alt="deux personnes avec un point d'interrogation">
+            <div>
+                <img class="image-question" src="../../images/question.svg" alt="deux personnes avec un point d'interrogation">
             </div>
             <div class="question">Question blablabla lorem ipsum dolor machin</div>
 
