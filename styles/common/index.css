@@ -109,7 +109,7 @@
 
 /* ------------ Responsive ------------ */
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 390px) {
     .homepage-body .start-button a {
         font-size: 22px;
         padding: 10px 15px 16px 15px;
