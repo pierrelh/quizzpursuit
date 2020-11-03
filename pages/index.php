@@ -1,7 +1,6 @@
         <div class="homepage-body">
 
             <div class="start-button">
-                <div class="image start-image"></div>
                 <a href="<?php echo $link ?>/quizz">Lancer un quizz</a>
             </div>
 

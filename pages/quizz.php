@@ -1,6 +1,7 @@
 
         <div class="quizz-body">
 
+            <div class="image image-question"></div>
             <div class="question">Question blablabla lorem ipsum dolor machin</div>
 
             <div class="answers">

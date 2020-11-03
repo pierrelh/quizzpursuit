@@ -7,24 +7,6 @@
     flex-direction: column;
 }
 
-.homepage-body .image {
-    position: absolute;
-    background-position: center;
-    text-indent: -9999px;
-    white-space: nowrap;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 200px;
-    height: 100px;
-    z-index: -1;
-}
-
-.homepage-body .image.start-image {
-    background-image: url('../../images/question.svg');
-    top: 100px;
-}
-
 .homepage-body .start-button {
     margin: 40px 20px 45px 20px;
 }
@@ -48,10 +30,10 @@
 
 .homepage-body>.leaderboard>h2 {
     font-size: 20px;
-    /* background-color: #f3eac2; */
+    background-color: black;
     padding: 15px;
     text-transform: uppercase;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -62,15 +44,25 @@
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    border-bottom: solid 1px black;
 }
 
 .homepage-body .leaderboard-list li {
     margin: 3px;
+    border: solid 1px 1px 1px 0 black;
 }
 
 .homepage-body .leaderboard-list li:first-child{
     font-size: 24px;
     color: goldenrod;
+}
+
+.homepage-body .leaderboard-list li:first-child::before {
+    content: "🥇🥈🥉";
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
 }
 
 .homepage-body .leaderboard-list li:nth-child(2) {
