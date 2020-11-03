@@ -106,3 +106,16 @@
 .homepage-body .leaderboard-list li:last-child {
     border-bottom: solid 3px black;
 }
+
+/* ------------ Responsive ------------ */
+
+@media screen and (max-width: 370px) {
+    .homepage-body .start-button a {
+        font-size: 22px;
+        padding: 10px 15px 16px 15px;
+    }
+
+    .homepage-body .start-button a span {
+        font-size: 32px;
+    }
+}
