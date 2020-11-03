@@ -118,4 +118,8 @@
     .homepage-body .start-button a span {
         font-size: 32px;
     }
+
+    .homepage-body .leaderboard h2 {
+        font-size: 19px;
+    }
 }
