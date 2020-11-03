@@ -31,6 +31,12 @@
     font-weight: bold;
 }
 
+.homepage-body .start-button a span {
+    font-family: 'Faster One', cursive;
+    letter-spacing: 2px;
+    text-shadow: -7px 5px black;
+}
+
 .homepage-body .start-button a:hover {
     background-color: black;
 }
@@ -57,7 +63,7 @@
 }
 
 .homepage-body .leaderboard-list li {
-    padding: 8px;
+    padding: 5px;
     width: 100%;
     border-left: solid 3px black;
     border-right: solid 3px black;

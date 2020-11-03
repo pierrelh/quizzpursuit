@@ -4,7 +4,7 @@
                 <img class="image-start" src="../../images/quizz1.svg" alt="">
             </div>
             <div class="start-button">
-                <a href="<?php echo $link ?>/quizz">Lancer un quizz</a>
+                <a href="<?php echo $link ?>/quizz">Lancer un <span>quizz</span></a>
             </div>
 
             <div class="leaderboard">
