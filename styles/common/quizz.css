@@ -10,7 +10,8 @@
 .quizz-body .question {
     font-size: 22px;
     font-weight: bold;
-    margin: 20px;
+    margin: 40px;
+    max-width: 650px;
 }
 
 .quizz-body .answers {
@@ -49,9 +50,18 @@
 }
 
 .quizz-body .answers .answer-list li {
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 12px 24px;
+    margin: 8px;
     background-color: #ec524b;
-    font-size: 15px;
+    font-size: 18px;
     border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.quizz-body .answers .answer-list li:hover {
+    background-color: black;
+    padding: 14px 28px;
+    margin: 4px;
 }
