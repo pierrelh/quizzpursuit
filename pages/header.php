@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
     </head>
     
     <body>
