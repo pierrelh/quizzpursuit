@@ -1,0 +1,24 @@
+/* ------------ Results ------------ */
+
+.results-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.results-body .score-section {
+    display: flex;
+}
+
+.results-body .score-section .score {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #ec524b;
+    border-radius: 50%;
+}
+
+.results-body .username-section {
+    
+}
