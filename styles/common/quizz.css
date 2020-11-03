@@ -8,15 +8,17 @@
 }
 
 .quizz-body .question {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
-    margin: 40px;
+    margin: 140px 40px 40px 40px;
     max-width: 650px;
 }
 
 .quizz-body .image.image-question {
     background-image: url('../../images/question.svg');
-    top: 100px;
+    top: 110px;
+    width: 220px;
+    height: 150px;
 }
 
 .quizz-body .answers {
@@ -32,19 +34,21 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 200px;
-    height: 100px;
     z-index: -1;
 }
 
 .quizz-body .answers .image.image1 {
     background-image: url('../../images/quizz1.svg');
     left: 20px;
+    width: 200px;
+    height: 100px;
 }
 
 .quizz-body .answers .image.image2 {
     background-image: url('../../images/quizz2.svg');
     right: 20px;
+    width: 200px;
+    height: 100px;
 }
 
 .quizz-body .answers ul {

@@ -43,13 +43,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
-    border-bottom: solid 1px black;
+    padding: 10px;
+    border: solid 3px black;
 }
 
 .homepage-body .leaderboard-list li {
     margin: 3px;
-    border: solid 1px 1px 1px 0 black;
+    width: 100%;
+    border-bottom: solid 1px black;
 }
 
 .homepage-body .leaderboard-list li:first-child{
@@ -58,11 +59,11 @@
 }
 
 .homepage-body .leaderboard-list li:first-child::before {
-    content: "🥇🥈🥉";
+    content: "🥇";
     display: block;
     width: 20px;
     height: 20px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .homepage-body .leaderboard-list li:nth-child(2) {
@@ -70,7 +71,23 @@
     color: silver;
 }
 
+.homepage-body .leaderboard-list li:nth-child(2)::before {
+    content: "🥉";
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
 .homepage-body .leaderboard-list li:nth-child(3) {
     font-size: 18px;
     color: blue;
+}
+
+.homepage-body .leaderboard-list li:nth-child(3)::before {
+    content: "🥉";
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
 }
