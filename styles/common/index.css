@@ -35,10 +35,17 @@
     font-family: 'Faster One', cursive;
     letter-spacing: 2px;
     text-shadow: -7px 5px black;
+    text-transform: capitalize;
+    margin-left: 5px;
 }
 
 .homepage-body .start-button a:hover {
     background-color: black;
+}
+
+.homepage-body .start-button a:hover span {
+    color: #ec524b;
+    text-shadow: -7px 5px white;
 }
 
 .homepage-body>.leaderboard>h2 {
