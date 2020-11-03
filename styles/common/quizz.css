@@ -14,12 +14,17 @@
     max-width: 650px;
 }
 
+.quizz-body .image.image-question {
+    background-image: url('../../images/question.svg');
+    top: 100px;
+}
+
 .quizz-body .answers {
     display: flex;
     flex-direction: column;
 }
 
-.quizz-body .answers .image {
+.quizz-body .image {
     position: absolute;
     background-position: center;
     text-indent: -9999px;
