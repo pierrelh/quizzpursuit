@@ -10,13 +10,14 @@
 .quizz-body .question {
     font-size: 25px;
     font-weight: bold;
-    margin: 190px 40px 40px 40px;
+    margin: 30px 40px 40px 40px;
     max-width: 650px;
 }
 
 .quizz-body .image-question {
     width: 220px;
     height: auto;
+    margin-top: 15px;
 }
 
 .quizz-body .answers {
