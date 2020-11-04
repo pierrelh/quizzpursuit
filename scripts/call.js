@@ -16,11 +16,13 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           // Replace dummy question with current question in loop
           document.getElementsByClassName('question')[0].innerHTML = response[key].question;
 
+          /*
+
           // Empty the anwser form
           document.getElementById("quizform").innerHTML = "";
 
           //////////////////
-          /* First answer */
+          // First answer //
           //////////////////
 
           // Create <label> element
@@ -48,7 +50,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           spanbis.append(input);
 
           ///////////////////
-          /* Second answer */
+          // Second answer //
           ///////////////////
 
           // Create <label> element
@@ -76,7 +78,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           spanbis2.append(input2);
 
           //////////////////
-          /* Third answer */
+          // Third answer //
           //////////////////
 
           // Create <label> element
@@ -104,7 +106,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           spanbis3.append(input3);
 
           ///////////////////
-          /* Fourth answer */
+          // Fourth answer //
           ///////////////////
 
           // Create <label> element
@@ -132,7 +134,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           spanbis4.append(input4);
 
           ////////////////
-          /* Merge html */
+          // Merge html //
           ////////////////
 
           label2.append(label);
@@ -141,6 +143,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
           // insert html
           document.getElementById("quizform").appendChild(label);
+
+        */
+
         }
       })(key);
   });
