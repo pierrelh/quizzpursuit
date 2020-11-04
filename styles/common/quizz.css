@@ -10,8 +10,9 @@
 
 .quizz-body .question {
     font-size: 25px;
+    line-height: 30px;
     font-weight: bold;
-    margin: 30px 40px 40px 40px;
+    margin: 30px 40px;
     max-width: 650px;
 }
 
@@ -29,8 +30,8 @@
 .quizz-body .answers .radiocontainer {
     background-color: #ec524b;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    /* flex-direction: row-reverse;
+    justify-content: flex-end; */
     padding: 12px 22px 12px 12px;
     margin: 8px;
     cursor: pointer;
@@ -53,13 +54,13 @@
     cursor: pointer;
 }
 
-.checkmark {
+/* .checkmark {
     margin-right: 10px;
     height: 19px;
     width: 19px;
     background-color: #fff;
     border-radius: 50%;
-}
+} */
 
 .answerbutton {
     background-color: black;

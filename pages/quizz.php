@@ -8,24 +8,24 @@
 
             <div class="answers">
                 <form role="form" id="quizform" name="quizform" method="post">
-                    <label class="radiocontainer" id="label1"> Home Tool Markup Language
-                        <input type="radio" name="quiz" id="1" onclick="clickRadio(this)" value="1">
-                        <span class="checkmark"></span>
+                    <label class="radiocontainer" id="label1">Réponse 1
+                        <input type="radio" name="quiz" id="1" value="1">
+                        <!-- <span class="checkmark"></span> -->
                     </label>
-                    <label class="radiocontainer" id="label2"> Hyperlinks and Text Markup Language
-                        <input type="radio" name="quiz" id="2" onclick="clickRadio(this)" value="2">
-                        <span class="checkmark"></span>
+                    <label class="radiocontainer" id="label2">Réponse 2
+                        <input type="radio" name="quiz" id="2" value="2">
+                        <!-- <span class="checkmark"></span> -->
                     </label>
-                    <label class="radiocontainer" id="label3"> Hyper Text Markup Language
-                        <input type="radio" name="quiz" id="3" onclick="clickRadio(this)" value="3">
-                        <span class="checkmark"></span>
+                    <label class="radiocontainer" id="label3">Réponse 3
+                        <input type="radio" name="quiz" id="3" value="3">
+                        <!-- <span class="checkmark"></span> -->
                     </label>
-                    <label class="radiocontainer" id="label4"> Hyper Text Markup Language
-                        <input type="radio" name="quiz" id="4" onclick="clickRadio(this)" value="4">
-                        <span class="checkmark"></span>
+                    <label class="radiocontainer" id="label4">Réponse 4
+                        <input type="radio" name="quiz" id="4" value="4">
+                        <!-- <span class="checkmark"></span> -->
                     </label>
 
-                    <button class="answerbutton" type="submit" onclick="clickNextButton(1)">Suivant</button>
+                    <button class="answerbutton" type="submit">Suivant</button>
                 </form>
             </div>
             
