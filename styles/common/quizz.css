@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .quizz-body .question {
@@ -28,9 +28,10 @@
 
 .quizz-body .answers .radiocontainer {
     background-color: #ec524b;
-    display: block;
-    position: relative;
-    padding: 12px 24px 12px 45px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 12px 22px 12px 12px;
     margin: 8px;
     cursor: pointer;
     font-size: 18px;
@@ -42,8 +43,8 @@
 
 .quizz-body .answers .radiocontainer:hover {
     background-color: black;
-    padding: 16px 30px 16px 45px;
-    margin: 4px;
+    /* padding: 16px 30px 16px 45px;
+    margin: 4px; */
 }
 
 .radiocontainer input {
@@ -53,9 +54,7 @@
 }
 
 .checkmark {
-    position: absolute;
-    top: 15px;
-    left: 15px;
+    margin-right: 10px;
     height: 19px;
     width: 19px;
     background-color: #fff;
@@ -64,10 +63,15 @@
 
 .answerbutton {
     background-color: black;
-    padding: 15px;
+    padding: 12px 20px;
     color: white;
     border: none;
     margin-top: 25px;
     border-radius: 5px;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.answerbutton:hover {
+    background-color: #ec524b;
 }
