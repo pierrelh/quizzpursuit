@@ -7,12 +7,20 @@
             <div class="question">Question blablabla lorem ipsum dolor machin</div>
 
             <div class="answers">
-                <ul class=answer-list>
-                    <li>Réponse 1</li>
-                    <li>Réponse 2</li>
-                    <li>Réponse 3</li>
-                    <li>Réponse 4</li>
-                </ul>
+                <div class="notranslate">
+                    <label class="radiocontainer" id="label1"> Home Tool Markup Language
+                        <input type="radio" name="quiz" id="1" onclick="clickRadio(this)" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radiocontainer" id="label2"> Hyperlinks and Text Markup Language
+                        <input type="radio" name="quiz" id="2" onclick="clickRadio(this)" value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radiocontainer" id="label3"> Hyper Text Markup Language
+                        <input type="radio" name="quiz" id="3" onclick="clickRadio(this)" value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
             </div>
             
         </div>

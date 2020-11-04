@@ -26,26 +26,37 @@
     flex-direction: column;
 }
 
-.quizz-body .answers ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-}
-
-.quizz-body .answers .answer-list li {
+.quizz-body .answers .radiocontainer {
+    background-color: #ec524b;
+    display: block;
+    position: relative;
     padding: 12px 24px;
     margin: 8px;
-    background-color: #ec524b;
+    cursor: pointer;
     font-size: 18px;
     border-radius: 5px;
     color: white;
-    cursor: pointer;
     transition: 0.3s;
 }
 
-.quizz-body .answers .answer-list li:hover {
+.quizz-body .answers .radiocontainer:hover {
     background-color: black;
     padding: 16px 30px;
     margin: 4px;
+}
+
+.radiocontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 19px;
+    width: 19px;
+    background-color: #fff;
+    border-radius: 50%;
 }
