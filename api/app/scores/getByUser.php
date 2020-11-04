@@ -6,7 +6,7 @@
     $sqlRequest = "SELECT username,
                           score
                    FROM scores
-                   WHERE username = '".$parameter."';
+                   WHERE username = '".$parameter."'";
     $result = pg_query($db, $sqlRequest);
 
     if (!empty($result)) {
