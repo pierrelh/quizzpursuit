@@ -29,7 +29,7 @@
 
     case (preg_match('#/api/questions/#', $uri) ? true : false):
       include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
-      $parameter = getParameter();
+      $parameter = getParameter("questions");
       if (!$parameter) {
         require __DIR__ . '/api/app/questions/getAll.php';
       }else {
@@ -39,11 +39,7 @@
     
     case (preg_match('#/api/scores/#', $uri) ? true : false):
       include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
-      $parameter = getParameter();
-      if (!$parameter) {
-        $parameter = "NULL";
-      }
-      require __DIR__ . '/api/app/scores/getAll.php';
+      $parameter = getParameter("scores");
       break;
     
     default:
