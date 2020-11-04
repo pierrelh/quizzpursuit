@@ -136,7 +136,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           ////////////////
 
           label2.append(label);
-          label3.append(labe2);
+          label3.append(label2);
           label4.append(label3);
 
           form.appendChild()
