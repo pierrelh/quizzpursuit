@@ -71,3 +71,7 @@
     font-size: 18px;
     cursor: pointer;
 }
+
+.answerbutton:hover {
+    background-color: #ec524b;
+}
