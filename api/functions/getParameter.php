@@ -10,9 +10,9 @@
       }
     }elseif ($api == "scores") {
       if(preg_match('#/api/scores#', $parameter) || $parameter == ""){
-        return $parameter;
-      }else {
         return false;
+      }else {
+        return $parameter;
       }
     }else {
       return false;
