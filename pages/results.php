@@ -1,6 +1,6 @@
 
         <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
-        <script>confetti.start(1200, 50, 150)</script>
+        <script>confetti.start(3000, 200, 450)</script>
 
         <div class="results-body">
 
