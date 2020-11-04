@@ -1,5 +1,5 @@
 <?php
-    //Return a random question from the db
+    //Return a defined number of questions from the db
     include_once($_SERVER['DOCUMENT_ROOT']."/functions/connexion.php");
     $db = connect();
 

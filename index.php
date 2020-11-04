@@ -29,14 +29,22 @@
       require __DIR__ . '/api/app/questions/getRandom.php';
       break;
     
+    //Get all questions API
     case '/api/questions/':
     case '/api/questions':
       require __DIR__ . '/api/app/questions/getAll.php';
       break;
+    
+    //Get all scores API
+    case '/api/scores/':
+    case '/api/scores':
+      require __DIR__ . '/api/app/scores/getAll.php';
+      break;
 
+    //Get all questions or a defined number
     case (preg_match('#/api/questions/#', $uri) ? true : false):
-      include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
-      $parameter = getParameter("questions");
+      include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameterQuestions.php");
+      $parameter = getParameter();
       if (!$parameter) {
         require __DIR__ . '/api/app/questions/getAll.php';
       }else {
@@ -44,9 +52,10 @@
       }
       break;
     
+    //Get all scores, or a defined number, or by username
     case (preg_match('#/api/scores/#', $uri) ? true : false):
-      include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
-      $parameter = getParameter("scores");
+      include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameterScores.php");
+      $parameter = getParameter();
       if (!$parameter) {
         $parameter = "NULL";
       }
