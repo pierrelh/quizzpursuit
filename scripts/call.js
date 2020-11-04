@@ -149,6 +149,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           form.appendChild(label2);
           form.appendChild(label3);
           form.appendChild(label4);
+          form.appendChild(button);
 
         }
       })(key);
