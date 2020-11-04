@@ -1,9 +1,12 @@
 
+        <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+        <script>confetti.start()</script>
+
         <div class="results-body">
 
             <div class="score-section">
                 <p>Votre score</p>
-                <div class="score">90/100</div>
+                <div class="score">90 %</div>
             </div>
 
             <div class="username-section">
