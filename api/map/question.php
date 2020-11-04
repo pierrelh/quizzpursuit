@@ -1,5 +1,5 @@
 <?php
-    //Map the random question for the API
+    //Map the response question for the API
     function mapQuestion($question) {
         $isFirst = false;
         $isSecond = false;

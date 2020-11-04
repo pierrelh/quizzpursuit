@@ -1,5 +1,5 @@
 <?php
-    //Return a random question from the db
+    //Return all or a defined number of scores and username
     include_once($_SERVER['DOCUMENT_ROOT']."/functions/connexion.php");
     $db = connect();
 
