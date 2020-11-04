@@ -5,7 +5,7 @@
         $secondAnswer = new \stdClass();
         $thirdAnswer = new \stdClass();
         $fourthAnswer = new \stdClass();
-        
+
         $isFirst = false;
         $isSecond = false;
         $isThird = false;
@@ -33,21 +33,17 @@
         }
         $firstAnswer->answer = $question['first_choice'];
         $firstAnswer->isCorrect = $isFirst;
-        $firstAnswer = json_encode($firstAnswer);
 
         $secondAnswer->answer = $question['second_choice'];
         $secondAnswer->isCorrect = $isFirst;
-        $secondAnswer = json_encode($secondAnswer);
         
         $thirdAnswer->answer = $question['third_choice'];
         $thirdAnswer->isCorrect = $isFirst;
-        $thirdAnswer = json_encode($thirdAnswer);
         
         $fourthAnswer->answer = $question['fourth_choice'];
         $fourthAnswer->isCorrect = $isFirst;
-        $fourthAnswer = json_encode($fourthAnswer);
         
-        $data = [
+        $dataSet = [
             "questionID" => $question['id'],
             "question" => $question['question'],
             "answer" => [
@@ -57,6 +53,9 @@
                 $fourthAnswer,
             ]
         ];
+
+        $data->question = $dataSet;
+
         return $data;
     }
 
