@@ -17,5 +17,7 @@
             
         </div>
 
+        <script src="<?php echo $link ?>/scripts/call.js"></script>
+
     </body>
 </html>
