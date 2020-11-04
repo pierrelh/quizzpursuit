@@ -5,8 +5,8 @@
               'https://adley-quizz.herokuapp.com/api/questions/:2'];
     foreach ($links as $value) {
         $raw = file_get_contents($value);
-        $json = json_decode($raw);
-        print $json;
+        // $json = json_decode($raw);
+        print $raw;
     }
 
 
