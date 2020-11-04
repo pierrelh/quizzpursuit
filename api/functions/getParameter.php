@@ -11,9 +11,9 @@
     }elseif ($api == "scores") {
       if(preg_match('#/api/scores#', $parameter) || $parameter == ""){
         if (is_numeric($parameter)) {
-          require __DIR__ . '/api/app/scores/getAll.php';
+          include_once($_SERVER['DOCUMENT_ROOT']."/api/app/scores/getAll.php");
         }else{
-          require __DIR__ . '/api/app/scores/getByUser.php';
+          include_once($_SERVER['DOCUMENT_ROOT']."/api/app/scores/getByUser.php");
         }
       }
     }else {
