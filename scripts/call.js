@@ -143,9 +143,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
           // insert html
           document.getElementById("quizform").appendChild(label);
-
-          break;
-
         }
       })(key);
   });
