@@ -62,6 +62,7 @@
     height: 30px;
     font-size: 16px;
     text-align: center;
+    border-radius: 0px;
 }
 
 .results-body .username-section form .username-input:focus {
