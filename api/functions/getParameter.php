@@ -10,11 +10,9 @@
       }
     }elseif ($api == "scores") {
       if(preg_match('#/api/scores#', $parameter) || $parameter == ""){
-        if (is_numeric($parameter)) {
-          include_once($_SERVER['DOCUMENT_ROOT']."/api/app/scores/getAll.php");
-        }else{
-          include_once($_SERVER['DOCUMENT_ROOT']."/api/app/scores/getByUser.php");
-        }
+        return $parameter;
+      }else {
+        return false;
       }
     }else {
       return false;

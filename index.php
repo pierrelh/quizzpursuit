@@ -47,6 +47,14 @@
     case (preg_match('#/api/scores/#', $uri) ? true : false):
       include_once($_SERVER['DOCUMENT_ROOT']."/api/functions/getParameter.php");
       $parameter = getParameter("scores");
+      if (!$parameter) {
+        $parameter = "NULL";
+      }
+      if (!is_numeric($parameter) && $parameter != "NULL") {
+        require __DIR__ . '/api/app/scores/getByUser.php';
+      }else{
+        require __DIR__ . '/api/app/scores/getAll.php';
+      }
       break;
     
     default:
