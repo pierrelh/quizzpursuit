@@ -1,6 +1,11 @@
 <?php
     //Map the response question for the API
     function mapQuestion($question) {
+        $firstAnswer = new \stdClass();
+        $secondAnswer = new \stdClass();
+        $thirdAnswer = new \stdClass();
+        $fourthAnswer = new \stdClass();
+        
         $isFirst = false;
         $isSecond = false;
         $isThird = false;
