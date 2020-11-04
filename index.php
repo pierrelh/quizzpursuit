@@ -38,6 +38,7 @@
     //Get all scores API
     case '/api/scores/':
     case '/api/scores':
+      $parameter = "NULL";
       require __DIR__ . '/api/app/scores/getAll.php';
       break;
 
