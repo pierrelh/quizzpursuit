@@ -33,4 +33,3 @@
 
 </html>
 
-<script src="<?php echo $link ?>/scripts/call.js"></script>
