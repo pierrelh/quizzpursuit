@@ -132,6 +132,15 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           label4.appendChild(input4);
           label4.appendChild(spanbis4);
 
+          ////////////
+          // Button //
+          ////////////
+
+          var button = document.createElement("BUTTON");
+          button.classList.add("answerbutton");
+          button.type = "submit";
+          button.innerText = "Suivant"
+
           /////////////////
           // Insert html //
           /////////////////
