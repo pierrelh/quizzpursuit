@@ -13,4 +13,9 @@
     text-decoration: none;
     color: black;
     text-shadow: -7px 5px #ec524b;
+    transition: 0.3s;
+}
+
+.page-logo h1 a:hover {
+    color: white;
 }

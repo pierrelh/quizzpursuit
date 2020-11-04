@@ -17,6 +17,8 @@
     font-weight: bold;
     background-color: #ec524b;
     border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }
 
 .results-body .username-section {
