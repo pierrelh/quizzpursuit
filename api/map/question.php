@@ -5,7 +5,6 @@
         $secondAnswer = new \stdClass();
         $thirdAnswer = new \stdClass();
         $fourthAnswer = new \stdClass();
-        $data = new \stdClass();
 
         $isFirst = false;
         $isSecond = false;
@@ -36,15 +35,15 @@
         $firstAnswer->isCorrect = $isFirst;
 
         $secondAnswer->answer = $question['second_choice'];
-        $secondAnswer->isCorrect = $isFirst;
+        $secondAnswer->isCorrect = $isSecond;
         
         $thirdAnswer->answer = $question['third_choice'];
-        $thirdAnswer->isCorrect = $isFirst;
+        $thirdAnswer->isCorrect = $isThird;
         
         $fourthAnswer->answer = $question['fourth_choice'];
-        $fourthAnswer->isCorrect = $isFirst;
+        $fourthAnswer->isCorrect = $isFourth;
         
-        $dataSet = [
+        $data = [
             "questionID" => $question['id'],
             "question" => $question['question'],
             "answer" => [
@@ -54,8 +53,6 @@
                 $fourthAnswer,
             ]
         ];
-
-        $data->question = $dataSet;
 
         return $data;
     }
