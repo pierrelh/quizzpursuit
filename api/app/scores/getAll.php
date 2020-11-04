@@ -12,6 +12,10 @@
 
     if (!empty($result)) {
         $data = pg_fetch_all($result);
+
+        $dataSet = new \stdClass();
+        $dataSet->scores = $data;
+        
         print json_encode($data);
     }else {
         print "false";
