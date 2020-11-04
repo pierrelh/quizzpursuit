@@ -7,7 +7,7 @@
             <div class="question">Question blablabla lorem ipsum dolor machin</div>
 
             <div class="answers">
-                <form role="form" id="quizform" name="quizform" action="quiztest.asp?qtest=HTML" method="post">
+                <form role="form" id="quizform" name="quizform" method="post">
                     <label class="radiocontainer" id="label1"> Home Tool Markup Language
                         <input type="radio" name="quiz" id="1" onclick="clickRadio(this)" value="1">
                         <span class="checkmark"></span>
