@@ -26,14 +26,30 @@
                 return false;
                 break;
         }
+        $firstAnswer->answer = $question['first_choice'];
+        $firstAnswer->isCorrect = $isFirst;
+        $firstAnswer = json_encode($firstAnswer);
+
+        $secondAnswer->answer = $question['second_choice'];
+        $secondAnswer->isCorrect = $isFirst;
+        $secondAnswer = json_encode($secondAnswer);
+        
+        $thirdAnswer->answer = $question['third_choice'];
+        $thirdAnswer->isCorrect = $isFirst;
+        $thirdAnswer = json_encode($thirdAnswer);
+        
+        $fourthAnswer->answer = $question['fourth_choice'];
+        $fourthAnswer->isCorrect = $isFirst;
+        $fourthAnswer = json_encode($fourthAnswer);
+        
         $data = [
             "questionID" => $question['id'],
             "question" => $question['question'],
             "answer" => [
-                $question['first_choice'] => $isFirst,
-                $question['second_choice'] => $isSecond,
-                $question['third_choice'] => $isThird,
-                $question['fourth_choice'] => $isFourth
+                $firstAnswer,
+                $secondAnswer,
+                $thirdAnswer,
+                $fourthAnswer,
             ]
         ];
         return $data;
