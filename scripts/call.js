@@ -139,8 +139,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           label3.append(label2);
           label4.append(label3);
 
-          form.appendChild()
-
           // insert html
           document.getElementById("quizform").appendChild(label);
         }
