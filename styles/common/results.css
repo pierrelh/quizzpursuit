@@ -10,6 +10,22 @@
 
 .results-body .score-section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results-body .score-section p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.results-body .score-section p::before {
+    content: "🏆";
+    height: fit-content;
+    width: fit-content;
+    font-size: 50px;
 }
 
 .results-body .score-section .score {
@@ -21,6 +37,8 @@
     width: 100px;
 }
 
-.results-body .username-section {
-    
+.results-body .username-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
