@@ -30,18 +30,19 @@
     background-color: #ec524b;
     display: block;
     position: relative;
-    padding: 12px 24px;
+    padding: 12px 24px 12px 45px;
     margin: 8px;
     cursor: pointer;
     font-size: 18px;
     border-radius: 5px;
     color: white;
     transition: 0.3s;
+    text-align: left;
 }
 
 .quizz-body .answers .radiocontainer:hover {
     background-color: black;
-    padding: 16px 30px;
+    padding: 16px 30px 16px 45px;
     margin: 4px;
 }
 
@@ -59,4 +60,9 @@
     width: 19px;
     background-color: #fff;
     border-radius: 50%;
+}
+
+.answerbutton {
+    background-color: black;
+    padding: 15px;
 }

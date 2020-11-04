@@ -15,13 +15,13 @@
     margin: 40px;
 }
 
-.results-body .score-section p {
+.results-body .score-section p:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.results-body .score-section p::before {
+.results-body .score-section p:first-child::before {
     content: "🏆";
     height: fit-content;
     width: fit-content;
