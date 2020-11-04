@@ -12,13 +12,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 40px;
 }
 
 .results-body .score-section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px;
 }
 
 .results-body .score-section p::before {
@@ -28,7 +28,7 @@
     font-size: 50px;
 }
 
-.results-body .score-section .score {
+.results-body .score-section .score-box {
     font-size: 40px;
     font-weight: bold;
     background-color: #ec524b;
