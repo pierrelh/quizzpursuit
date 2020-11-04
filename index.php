@@ -16,6 +16,13 @@
       require __DIR__ . '/pages/quizz.php';
       break;
 
+    //Quizz page
+    case '/results':
+    case '/results/':
+      require __DIR__ . '/pages/header.php';
+      require __DIR__ . '/pages/results.php';
+      break;
+
     //Get a random question API
     case '/api/questions/random/':
     case '/api/questions/random':
