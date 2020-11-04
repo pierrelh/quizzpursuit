@@ -6,7 +6,7 @@
     $sqlRequest = "SELECT *
                    FROM quizz_questions
                    ORDER BY RANDOM() 
-                   LIMIT ".$parameter."";
+                   LIMIT ".$parameter;
     $result = pg_query($db, $sqlRequest);
 
     if (!empty($result)) {
