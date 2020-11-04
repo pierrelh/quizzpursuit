@@ -6,7 +6,8 @@
     $sqlRequest = "SELECT username,
                           score
                    FROM scores
-                   LIMIT ".$parameter."";
+                   ORDER BY score DESC
+                   LIMIT ".$parameter;
     $result = pg_query($db, $sqlRequest);
 
     if (!empty($result)) {
