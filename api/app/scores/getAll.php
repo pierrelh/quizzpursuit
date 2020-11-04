@@ -15,8 +15,8 @@
 
         $dataSet = new \stdClass();
         $dataSet->scores = $data;
-        
-        print json_encode($data);
+
+        print json_encode($dataSet);
     }else {
         print "false";
     }
