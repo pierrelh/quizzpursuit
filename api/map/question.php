@@ -5,6 +5,7 @@
         $secondAnswer = new \stdClass();
         $thirdAnswer = new \stdClass();
         $fourthAnswer = new \stdClass();
+        $data = new \stdClass();
 
         $isFirst = false;
         $isSecond = false;
