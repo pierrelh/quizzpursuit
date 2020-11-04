@@ -12,7 +12,9 @@
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/question.php");
         $data = array_map('mapQuestion', $data);
-        print json_encode($data);
+        $dataSet = new \stdClass();
+        $dataSet->question = $data;
+        print json_encode($dataSet);
     }else {
         print "false";
     }
