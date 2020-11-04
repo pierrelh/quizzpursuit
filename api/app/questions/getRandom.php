@@ -13,7 +13,12 @@
         $data = pg_fetch_all($result);
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/question.php");
-        print json_encode((array_map('mapQuestion', $data)));
+        $data = array_map('mapQuestion', $data);
+
+        $dataSet = new \stdClass();
+        $dataSet->questions = $data;
+        
+        print json_encode($dataSet);
     }else {
         print "false";
     }
