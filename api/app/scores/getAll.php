@@ -14,7 +14,8 @@
         $data = pg_fetch_all($result);
 
         // include_once($_SERVER['DOCUMENT_ROOT']."/api/map/score.php");
-        print json_encode(array_map('mapScore', $data));
+        // print json_encode(array_map('mapScore', $data));
+        print json_encode($data);
     }else {
         print "false";
     }
