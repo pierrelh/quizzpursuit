@@ -30,8 +30,9 @@
 .quizz-body .answers .radiocontainer {
     background-color: #ec524b;
     display: flex;
-    /* flex-direction: row-reverse;
-    justify-content: flex-end; */
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
     padding: 12px 22px 12px 12px;
     margin: 8px;
     cursor: pointer;
@@ -39,7 +40,6 @@
     border-radius: 5px;
     color: white;
     transition: 0.3s;
-    text-align: left;
 }
 
 .quizz-body .answers .radiocontainer:hover {
@@ -49,18 +49,9 @@
 }
 
 .radiocontainer input {
-    position: absolute;
-    opacity: 0;
     cursor: pointer;
-}
-
-/* .checkmark {
     margin-right: 10px;
-    height: 19px;
-    width: 19px;
-    background-color: #fff;
-    border-radius: 50%;
-} */
+}
 
 .answerbutton {
     background-color: black;
