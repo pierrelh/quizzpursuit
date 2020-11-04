@@ -12,7 +12,6 @@
 
         include_once($_SERVER['DOCUMENT_ROOT']."/api/map/question.php");
         $data = array_map('mapQuestion', $data);
-        $data = $data[0];
         print json_encode($data);
     }else {
         print "false";
