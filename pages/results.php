@@ -16,7 +16,7 @@
                 <form action="" method="get">
                     <label for="username">Votre pseudo :</label>
                     <input class="username-input" type="text" name="username" id="username">    
-                    <button type="submit">Valider</button>          
+                    <button type="submit">Enregistrer</button>          
                 </form>
             </div>
             
