@@ -16,10 +16,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           // Replace dummy question with current question in loop
           document.getElementsByClassName('question')[0].innerHTML = response[key].question;
 
-          /*
-
           // Empty the anwser form
-          document.getElementById("quizform").innerHTML = "";
+          form = document.getElementById("quizform");
+          form.innerHTML = "";
 
           //////////////////
           // First answer //
@@ -45,9 +44,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           var spanbis = document.createElement("SPAN");
           spanbis.classList.add("checkmark");
 
-          span.appendChild(label);
-          input.append(span);
-          spanbis.append(input);
+          label.appendChild(span);
+          label.appendChild(input);
+          label.appendChild(spanbis);
 
           ///////////////////
           // Second answer //
@@ -73,9 +72,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           var spanbis2 = document.createElement("SPAN");
           spanbis2.classList.add("checkmark");
 
-          span2.appendChild(label2);
-          input2.append(span2);
-          spanbis2.append(input2);
+          label2.appendChild(span2);
+          label2.appendChild(input2);
+          label2.appendChild(spanbis2);
 
           //////////////////
           // Third answer //
@@ -101,9 +100,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           var spanbis3 = document.createElement("SPAN");
           spanbis3.classList.add("checkmark");
 
-          span3.appendChild(label3);
-          input3.append(span3);
-          spanbis3.append(input3);
+          label3.appendChild(span3);
+          label3.appendChild(input3);
+          label3.appendChild(spanbis3);
 
           ///////////////////
           // Fourth answer //
@@ -129,22 +128,18 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           var spanbis4 = document.createElement("SPAN");
           spanbis4.classList.add("checkmark");
 
-          span4.appendChild(label4);
-          input4.append(span4);
-          spanbis4.append(input4);
+          label4.appendChild(span4);
+          label4.appendChild(input4);
+          label4.appendChild(spanbis4);
 
-          ////////////////
-          // Merge html //
-          ////////////////
+          /////////////////
+          // Insert html //
+          /////////////////
 
-          label2.append(label);
-          label3.append(label2);
-          label4.append(label3);
-
-          // insert html
-          document.getElementById("quizform").appendChild(label);
-
-        */
+          form.appendChild(label);
+          form.appendChild(label2);
+          form.appendChild(label3);
+          form.appendChild(label4);
 
         }
       })(key);
