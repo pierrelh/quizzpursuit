@@ -5,7 +5,7 @@
         <div class="results-body">
 
             <div class="score-section">
-                <p>Votre score</p>
+                <h2>Votre score</h2>
                 <div class="score-box">
                     <p class="score">90</p>
                     <p>%</p>
@@ -15,8 +15,8 @@
             <div class="username-section">
                 <form action="" method="get">
                     <label for="username">Votre pseudo :</label>
-                    <input type="text" name="username" id="username">    
-                    <input type="submit" value="Valider">            
+                    <input class="username-input" type="text" name="username" id="username">    
+                    <button type="submit">Valider</button>          
                 </form>
             </div>
             
