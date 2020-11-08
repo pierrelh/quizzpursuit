@@ -7,9 +7,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     console.log(response);
 
     // Loop in json
-
-    for (const key in response)
-      (function (key) {
+    var key = 1;
         if (response.hasOwnProperty(key)) {
           console.log(response[key].question);
           
@@ -194,7 +192,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           
 
         }
-      })(key);
 
       
      
