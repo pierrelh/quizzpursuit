@@ -35,7 +35,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           window.alert("Le score est de " + count + "/10");
         }
         addQuestion();
-        submitbutton = document.getElementsByClassName('answerbutton')[0];
+        
       }
       
     function addQuestion()
@@ -187,7 +187,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           form.appendChild(label4);
           form.appendChild(button);
         }
-
+        submitbutton = document.getElementsByClassName('answerbutton')[0];
       }
 
       
