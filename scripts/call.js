@@ -161,7 +161,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
             var val;
             form = document.getElementById("quizform");
             // get list of radio buttons with specified name
-            var radios = form.elements["quizz"];
+            var radios = form.elements["quiz"];
             
             // loop through list of radio buttons
             for (var i=0, len=radios.length; i<len; i++) {
