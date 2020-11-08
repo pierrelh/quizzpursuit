@@ -21,18 +21,20 @@
             "error_message" => "An error occurred during while processing your request."
         ];
 
-    }elseif (empty($result)) {
-        
-        //The returned result is empty
-        $data = [
-            "status_code" => "200",
-            "error_message" => "Your request as been successfully treated but the returned data is empty"
-        ];
-
     }else {
-
-        //The returned result is good
+        
         $data = pg_fetch_all($result);
+
+        if (!$data) {
+
+            //The returned result is empty
+            $data = [
+                "status_code" => "200",
+                "error_message" => "Your request as been successfully treated but the returned data is empty"
+            ];
+
+        }
+
 
     }
 
