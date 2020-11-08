@@ -7,7 +7,7 @@
             <div class="score-section">
                 <h2>Votre score</h2>
                 <div class="score-box">
-                    <p class="score">90</p>
+                    <p id="userScore" class="score">90</p>
                     <p>%</p>
                 </div>
             </div>
@@ -15,8 +15,8 @@
             <div class="username-section">
                 <form id="sendScore" action="" method="post">
                     <label for="username">Votre pseudo :</label>
-                    <input class="username-input" type="text" name="username" id="username">    
-                    <button type="submit">Enregistrer</button>          
+                    <input pattern="[A-Za-z]" class="username-input" type="text" name="username" id="username">    
+                    <button id="sendScoreButton" type="submit">Enregistrer</button>          
                 </form>
             </div>
             
