@@ -27,7 +27,7 @@ document.getElementById("sendScoreButton").addEventListener("click", function(){
                     data: formData,
                     success: function(data){
                         if (data == "true") {
-                            window.location.replace = server;
+                            window.location.assign(server);
                         }else {
                             alert("Une erreur est survenue, veuillez réessayer plus tard.")
                         }
