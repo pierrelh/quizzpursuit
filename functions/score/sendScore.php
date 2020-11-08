@@ -2,7 +2,7 @@
 
     include_once($_SERVER['DOCUMENT_ROOT']."/functions/connexion.php");
     $db = connect();
-
+    
     $sqlRequest = "INSERT INTO scores
                                (quizz_id,
                                username,
@@ -19,7 +19,6 @@
 
     if (is_resource($result)) {
         print "true";
-        setcookie("SESSION_PSEUDO", $_POST['username'], strtotime( '+7 days' ), '/');
     }else {
         print "false";
     }

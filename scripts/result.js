@@ -27,6 +27,11 @@ document.getElementById("sendScoreButton").addEventListener("click", function(){
                     data: formData,
                     success: function(data){
                         if (data == "true") {
+                            let date = new Date(Date.now() + 86400000);
+                            date = date.toUTCString();
+
+                            document.cookie = "SESSION_PSEUDO=" + username + "; path=/; expires=" + date;
+                            
                             window.location.assign(server);
                         }else {
                             alert("Une erreur est survenue, veuillez réessayer plus tard.")
