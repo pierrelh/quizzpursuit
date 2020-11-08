@@ -13,7 +13,7 @@
             </div>
 
             <div class="username-section">
-                <form action="" method="get">
+                <form id="sendScore" action="" method="post">
                     <label for="username">Votre pseudo :</label>
                     <input class="username-input" type="text" name="username" id="username">    
                     <button type="submit">Enregistrer</button>          
@@ -23,4 +23,7 @@
         </div>
 
     </body>
+
+    <script src="<?php echo $link ?>/scripts/result.js"></script>
+
 </html>

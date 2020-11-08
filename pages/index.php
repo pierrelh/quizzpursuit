@@ -1,7 +1,7 @@
         <div class="homepage-body">
 
             <div>
-                <img class="image-start" src="../../images/quizz1.svg" alt="">
+                <img class="image-start" src="<?php echo $link ?>/images/quizz1.svg" alt="">
             </div>
             <div class="start-button">
                 <a href="<?php echo $link ?>/quizz">Lancer un <span>quizz</span></a>
