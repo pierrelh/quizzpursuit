@@ -155,7 +155,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           form.appendChild(label4);
           form.appendChild(button);
 
-          submitbutton = getElementsByClassName('answerbutton')[0];
+          submitbutton = document.getElementsByClassName('answerbutton')[0];
           button.onclick = function() {
             var val;
             // get list of radio buttons with specified name
