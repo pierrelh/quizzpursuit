@@ -12,7 +12,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
     addQuestion();
     submitbutton = document.getElementsByClassName('answerbutton')[0];
-      button.onclick = function(event) {
+      submitbutton.onclick = function(event) {
         event.preventDefault()
         var val;
         form = document.getElementById("quizform");
