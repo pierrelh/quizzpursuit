@@ -9,15 +9,16 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     // Loop in json
     var key = 0;
     var count = 0
+    var val;
+    var radios;
 
     addQuestion();
     submitbutton = document.getElementsByClassName('answerbutton')[0];
       submitbutton.onclick = function(event) {
         event.preventDefault()
-        var val;
         form = document.getElementById("quizform");
         // get list of radio buttons with specified name
-        var radios = form.elements["quiz"];
+        radios = form.elements["quiz"];
         
         // loop through list of radio buttons
         for (var i=0, len=radios.length; i<len; i++) {
