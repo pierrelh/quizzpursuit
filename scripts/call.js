@@ -13,7 +13,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     var radios;
 
     addQuestion();
-    submitbutton = document.getElementsByClassName('answerbutton')[0];
+    submitbutton = document.getElementsByClassName('image-question')[0];
       submitbutton.onclick = function() {
         form = document.getElementById("quizform");
         // get list of radio buttons with specified name
@@ -35,7 +35,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           window.alert("Le score est de " + count + "/10");
         }
         addQuestion();
-        
       }
       
     function addQuestion()
@@ -187,7 +186,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           form.appendChild(label4);
           form.appendChild(button);
         }
-        submitbutton = document.getElementsByClassName('answerbutton')[0];
+
       }
 
       
