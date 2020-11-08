@@ -11,7 +11,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     var count = 0
 
     addQuestion();
-    while (key <= 10) { 
     submitbutton = document.getElementsByClassName('answerbutton')[0];
       submitbutton.onclick = function(event) {
         event.preventDefault()
@@ -37,7 +36,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
         }
         addQuestion();
       }
-    }
       
     function addQuestion()
     {
