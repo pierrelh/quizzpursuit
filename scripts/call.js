@@ -13,6 +13,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     var radios;
 
     addQuestion();
+    submitbutton = document.getElementsByClassName('answerbutton')[0];
       submitbutton.onclick = function() {
         form = document.getElementById("quizform");
         // get list of radio buttons with specified name
