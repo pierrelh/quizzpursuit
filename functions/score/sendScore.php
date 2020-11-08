@@ -18,8 +18,7 @@
                                                 ));
 
     if ($result != false) {
-        $val = pg_fetch_all($result);
-        print json_encode($val);
+        print json_encode($result);
     }else {
         print "false";
     }
