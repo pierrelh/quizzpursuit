@@ -39,9 +39,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input.name = "quiz";
           input.id = 1;
           if ( response[key].answer == "1" ) {
-            input.value = true;
+            input.value = "true";
           } else {
-            input.value = false;
+            input.value = "false";
           }
           
           input.setAttribute("required", "");
@@ -73,9 +73,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input2.name = "quiz";
           input2.id = 2;
           if ( response[key].answer == "2" ) {
-            input.value = true;
+            input.value = "true";
           } else {
-            input.value = false;
+            input.value = "false";
           }
           input2.setAttribute("required", "");
 
@@ -106,9 +106,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input3.name = "quiz";
           input3.id = 3;
           if ( response[key].answer == "3" ) {
-            input.value = true;
+            input.value = "true";
           } else {
-            input.value = false;
+            input.value = "false";
           }
           input3.setAttribute("required", "");
 
@@ -139,9 +139,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input4.name = "quiz";
           input4.id = 4;
           if ( response[key].answer == "4" ) {
-            input.value = true;
+            input.value = "true";
           } else {
-            input.value = false;
+            input.value = "false";
           }
           input4.setAttribute("required", "");
 
