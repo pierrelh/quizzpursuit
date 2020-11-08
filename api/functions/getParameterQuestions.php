@@ -1,4 +1,5 @@
 <?php
+
   //Get the paramater, if exist, on the get question API
   function getParameter(){
     $url = $_SERVER['REQUEST_URI'];

@@ -1,19 +1,42 @@
 <?php
-    //Return an user score & username
+
+    //Create the connexion to the db
     include_once($_SERVER['DOCUMENT_ROOT']."/functions/connexion.php");
     $db = connect();
 
+    //Get the username & the score of a defined user
     $sqlRequest = "SELECT username,
                           score
                    FROM scores
                    WHERE username = '".$parameter."'";
+    
+    //Launch the request
     $result = pg_query($db, $sqlRequest);
 
-    if (!empty($result)) {
-        $data = pg_fetch_all($result);
-        print json_encode($data);
+    //If the result isn't empty then format and return it
+    if (!$result) {
+        
+        //An error occurred during the process
+        $data = [
+            "status_code" => "500",
+            "error_message" => "An error occurred during while processing your request."
+        ];
+
+    }elseif (empty($result)) {
+        
+        //The returned result is empty
+        $data = [
+            "status_code" => "200",
+            "error_message" => "Your request as been successfully treated but the returned data is empty"
+        ];
+
     }else {
-        print "false";
+
+        //The returned result is good
+        $data = pg_fetch_all($result);
+
     }
+
+    print json_encode($data);
 
 ?>

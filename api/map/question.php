@@ -1,4 +1,5 @@
 <?php
+
     //Map the response question for the API
     function mapQuestion($question) {
         $firstAnswer = new \stdClass();
@@ -11,6 +12,7 @@
         $isThird = false;
         $isFourth = false;
 
+        //Get witch of the answer is the right one
         switch ($question['answer']) {
             case 1:
                 $isFirst = true;

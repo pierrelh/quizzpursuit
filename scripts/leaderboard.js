@@ -4,10 +4,9 @@ fetch(server + "/functions/score/getLeaderboard.php")
   .then((response) => response.json())
   .then(function (response) {
 
-    console.log(response);
     var leaderBoardList = document.getElementById("leaderboardList");
+    
     // Loop in json
-
     for (const key in response)
       (function (key) {
         if (response.hasOwnProperty(key)) {
