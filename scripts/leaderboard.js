@@ -1,24 +1,23 @@
-function setLeaderboard(users) {
-    for (let i = 0; i < users.length; i++) {
-        console.log(users[i]);        
-    }
-}
+// Fetch data from PHP file
+var server = "https://" + window.location.hostname;
+fetch(server + "/functions/score/getLeaderboard.php")
+  .then((response) => response.json())
+  .then(function (response) {
 
-document.addEventListener("DOMContentLoaded", function() {
-    var server = "https://" + window.location.hostname;
-    $.ajax({
-        url: server + "/functions/score/getLeaderboard.php",
-        type: "POST",
-        dataType: 'script',
-        cache: false,
-        contentType: false,
-        processData: false,
-        success: function(data){
-            if (data != "false") {
-                setLeaderboard(data);
-            }else {
-                console.log("Warning: Chargement du leaderboard impossible.")
-            }
+    console.log(response);
+    var leaderBoardList = document.getElementById("leaderboardList");
+    // Loop in json
+
+    for (const key in response)
+      (function (key) {
+        if (response.hasOwnProperty(key)) {
+
+          // Create <li> element
+          var li = document.createElement("li");
+          li.innerHTML = response[key].username + " - " + response[key].score + "%"
+          leaderBoardList.appendChild(li);
+
         }
-    });
-}, false);
+      })(key);
+  });
+
