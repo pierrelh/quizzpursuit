@@ -14,16 +14,32 @@
     //Launch the request
     $result = pg_query($db, $sqlRequest);
 
-    //If the result isn't empty then format and return it
-    if (!empty($result)) {
+    if (!$result) {
+        
+        //An error occurred during the process
+        $dataSet = [
+            "status_code" => "500",
+            "error_message" => "An error occurred during while processing your request."
+        ];
+
+    }elseif (empty($result)) {
+        
+        //The returned result is empty
+        $dataSet = [
+            "status_code" => "200",
+            "error_message" => "Your request as been successfully treated but the returned data is empty"
+        ];
+
+    }else {
+        
+        //The returned result is good
         $data = pg_fetch_all($result);
 
         $dataSet = new \stdClass();
         $dataSet->scores = $data;
-
-        print json_encode($dataSet);
-    }else {
-        print "false";
+        
     }
+
+    print json_encode($dataSet);
 
 ?>
