@@ -7,7 +7,21 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     console.log(response);
 
     // Loop in json
-    var key = 1;
+    var key = 0;
+    var count = 0
+
+    for (const question in response) {
+      if (addQuestion() == true) {
+        count++
+      }
+      key++
+      if (key == 10) {
+        window.alert("Le score est de " + count + "/10");
+      }
+    }
+
+    function addQuestion()
+    {
         if (response.hasOwnProperty(key)) {
           console.log(response[key].question);
           
@@ -155,7 +169,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           form.appendChild(button);
 
           submitbutton = document.getElementsByClassName('answerbutton')[0];
-          button.onclick = function(event) {
+          result = button.onclick = function(event) {
             event.preventDefault()
             var val;
             form = document.getElementById("quizform");
@@ -170,16 +184,19 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
                 }
             }
             if (val == response[key].answer) {
-              console.log("Bien")
+              return true
             } else {
-              console.log("Pas bien")
+              return false
             }
-            return val; // return value of checked radio or undefined if none checked
-        }
+          }
+          console.log(result);
+          return result;
 
           
 
         }
+
+      }
 
       
      
