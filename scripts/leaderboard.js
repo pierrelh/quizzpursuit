@@ -4,7 +4,7 @@ function setLeaderboard(users) {
     }
 }
 
-document.getElementById("sendScoreButton").addEventListener("click", function(){
+document.addEventListener("DOMContentLoaded", function() {
     $.ajax({
         url: server + "/functions/score/getLeaderboard.php",
         type: "POST",
@@ -20,4 +20,4 @@ document.getElementById("sendScoreButton").addEventListener("click", function(){
             }
         }
     });
-});
+}, false);
