@@ -38,7 +38,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input.type = "radio";
           input.name = "quiz";
           input.id = 1;
-          if ( response[key].answer = 1 ) {
+          if ( response[key].answer == 1 ) {
             input.value = true;
           } else {
             input.value = false;
@@ -72,7 +72,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input2.type = "radio";
           input2.name = "quiz";
           input2.id = 2;
-          if ( response[key].answer = 2 ) {
+          if ( response[key].answer == 2 ) {
             input.value = true;
           } else {
             input.value = false;
@@ -105,7 +105,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input3.type = "radio";
           input3.name = "quiz";
           input3.id = 3;
-          if ( response[key].answer = 3 ) {
+          if ( response[key].answer == 3 ) {
             input.value = true;
           } else {
             input.value = false;
@@ -138,7 +138,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input4.type = "radio";
           input4.name = "quiz";
           input4.id = 4;
-          if ( response[key].answer = 4 ) {
+          if ( response[key].answer == 4 ) {
             input.value = true;
           } else {
             input.value = false;
