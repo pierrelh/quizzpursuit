@@ -66,7 +66,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input2.type = "radio";
           input2.name = "quiz";
           input2.id = 2;
-          input.value = "2";
+          input2.value = "2";
           input2.setAttribute("required", "");
 
           // Create second <span> element
@@ -95,7 +95,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input3.type = "radio";
           input3.name = "quiz";
           input3.id = 3;
-          input.value = "3";
+          input3.value = "3";
           input3.setAttribute("required", "");
 
           // Create second <span> element
@@ -124,7 +124,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           input4.type = "radio";
           input4.name = "quiz";
           input4.id = 4;
-          input.value = "4";
+          input4.value = "4";
           input4.setAttribute("required", "");
 
           // Create second <span> element
