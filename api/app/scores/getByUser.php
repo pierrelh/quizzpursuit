@@ -13,7 +13,6 @@
     //Launch the request
     $result = pg_query($db, $sqlRequest);
 
-    //If the result isn't empty then format and return it
     if (!$result) {
         
         //An error occurred during the process
