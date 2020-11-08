@@ -15,7 +15,7 @@
             <div class="username-section">
                 <form id="sendScore" action="" method="post">
                     <label for="username">Votre pseudo :</label>
-                    <input placeholder="Pseudo" class="username-input" type="text" name="username" id="username">    
+                    <input placeholder="Pseudo" class="username-input" value="<?php if (isset($_COOKIE['SESSION_PSEUDO'])) {echo $_COOKIE['SESSION_PSEUDO'];} ?>" type="text" name="username" id="username">    
                     <button id="sendScoreButton" type="submit">Enregistrer</button>          
                 </form>
             </div>

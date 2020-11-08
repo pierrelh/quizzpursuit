@@ -19,6 +19,7 @@
 
     if (is_resource($result)) {
         print "true";
+        setcookie("SESSION_PSEUDO", $_POST['username'], strtotime( '+7 days' ), '/');
     }else {
         print "false";
     }
