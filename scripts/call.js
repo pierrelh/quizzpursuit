@@ -10,16 +10,33 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     var key = 0;
     var count = 0
 
-    for (const question in response) {
-      if (addQuestion() == true) {
-        count++
+    addQuestion();
+    submitbutton = document.getElementsByClassName('answerbutton')[0];
+      button.onclick = function(event) {
+        event.preventDefault()
+        var val;
+        form = document.getElementById("quizform");
+        // get list of radio buttons with specified name
+        var radios = form.elements["quiz"];
+        
+        // loop through list of radio buttons
+        for (var i=0, len=radios.length; i<len; i++) {
+            if ( radios[i].checked ) { // radio checked?
+                val = radios[i].value; // if so, hold its value in val
+                break; // and break out of for loop
+            }
+        }
+        console.log(response[key].answer);
+        if (val == response[key].answer) {
+          count++
+        }
+        key++
+        if (key == 10) {
+          window.alert("Le score est de " + count + "/10");
+        }
+        addQuestion();
       }
-      key++
-      if (key == 10) {
-        window.alert("Le score est de " + count + "/10");
-      }
-    }
-
+      
     function addQuestion()
     {
         if (response.hasOwnProperty(key)) {
@@ -167,35 +184,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           form.appendChild(label3);
           form.appendChild(label4);
           form.appendChild(button);
-
-          submitbutton = document.getElementsByClassName('answerbutton')[0];
-          var result;
-          button.onclick = function(event) {
-            event.preventDefault()
-            var val;
-            form = document.getElementById("quizform");
-            // get list of radio buttons with specified name
-            var radios = form.elements["quiz"];
-            
-            // loop through list of radio buttons
-            for (var i=0, len=radios.length; i<len; i++) {
-                if ( radios[i].checked ) { // radio checked?
-                    val = radios[i].value; // if so, hold its value in val
-                    break; // and break out of for loop
-                }
-            }
-            console.log(response[key].answer);
-            if (val == response[key].answer) {
-              result = true;
-            } else {
-              result = false;
-            }
-          }
-          console.log(result);
-          return result;
-
-          
-
         }
 
       }
