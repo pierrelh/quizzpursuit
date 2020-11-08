@@ -14,7 +14,7 @@ fetch(server + "/functions/score/getLeaderboard.php")
 
           // Create <li> element
           var li = document.createElement("li");
-          li.innerHTML = response[key].username + " - " + response[key].score + "%"
+          li.innerHTML = "#" + key + " " + response[key].username + " - " + response[key].score + "%"
           leaderBoardList.appendChild(li);
 
         }
