@@ -142,9 +142,8 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
           var button = document.createElement("BUTTON");
           button.classList.add("answerbutton");
-          button.type = "submit";
           button.innerText = "Suivant"
-          // button.onclick = console.log(getRadioVal(form, "quizz"));
+          button.addEventListener("click", getRadioVal(form, "quizz"));
 
           /////////////////
           // Insert html //
@@ -156,24 +155,26 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           form.appendChild(label4);
           form.appendChild(button);
 
+          function getRadioVal(form, name) {
+            var val;
+            // get list of radio buttons with specified name
+            var radios = form.elements[name];
+            
+            // loop through list of radio buttons
+            for (var i=0, len=radios.length; i<len; i++) {
+                if ( radios[i].checked ) { // radio checked?
+                    val = radios[i].value; // if so, hold its value in val
+                    break; // and break out of for loop
+                }
+            }
+            console.log(val);
+            return val; // return value of checked radio or undefined if none checked
+        }
+
         }
       })(key);
 
       
-
-      function getRadioVal(form, name) {
-        var val;
-        // get list of radio buttons with specified name
-        var radios = form.elements[name];
-        
-        // loop through list of radio buttons
-        for (var i=0, len=radios.length; i<len; i++) {
-            if ( radios[i].checked ) { // radio checked?
-                val = radios[i].value; // if so, hold its value in val
-                break; // and break out of for loop
-            }
-        }
-        return val; // return value of checked radio or undefined if none checked
-    }
+     
   });
 
