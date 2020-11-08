@@ -18,7 +18,7 @@
                                                 ));
 
     if ($result != false) {
-        print json_encode($result);
+        print $result;
     }else {
         print "false";
     }
