@@ -15,7 +15,7 @@
             <div class="username-section">
                 <form id="sendScore" action="" method="post">
                     <label for="username">Votre pseudo :</label>
-                    <input pattern="[A-Za-z]" class="username-input" type="text" name="username" id="username">    
+                    <input placeholder="Pseudo" class="username-input" type="text" name="username" id="username">    
                     <button id="sendScoreButton" type="submit">Enregistrer</button>          
                 </form>
             </div>
