@@ -17,8 +17,8 @@
                                                     $_POST['score']
                                                 ));
 
-    if ($result != false) {
-        print $result;
+    if (is_resource($result)) {
+        print "true";
     }else {
         print "false";
     }
