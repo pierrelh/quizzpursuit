@@ -6,10 +6,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
     console.log(response);
 
-    var ligne = 0;
-
-
-
     // Loop in json
 
     for (const key in response)
@@ -148,7 +144,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           button.classList.add("answerbutton");
           button.type = "submit";
           button.innerText = "Suivant"
-          button.onclick = console.log(getRadioVal(form, "quizz"));
+          // button.onclick = console.log(getRadioVal(form, "quizz"));
 
           /////////////////
           // Insert html //
