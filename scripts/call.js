@@ -184,6 +184,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
                     break; // and break out of for loop
                 }
             }
+            console.log(response[key].answer);
             if (val == response[key].answer) {
               result = true;
             } else {
