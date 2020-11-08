@@ -6,6 +6,10 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
     console.log(response);
 
+    var ligne = 0;
+
+
+
     // Loop in json
 
     for (const key in response)
@@ -144,6 +148,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           button.classList.add("answerbutton");
           button.type = "submit";
           button.innerText = "Suivant"
+          button.onclick = console.log(getRadioVal(form, "quizz"));
 
           /////////////////
           // Insert html //
@@ -157,5 +162,22 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
         }
       })(key);
+
+      
+
+      function getRadioVal(form, name) {
+        var val;
+        // get list of radio buttons with specified name
+        var radios = form.elements[name];
+        
+        // loop through list of radio buttons
+        for (var i=0, len=radios.length; i<len; i++) {
+            if ( radios[i].checked ) { // radio checked?
+                val = radios[i].value; // if so, hold its value in val
+                break; // and break out of for loop
+            }
+        }
+        return val; // return value of checked radio or undefined if none checked
+    }
   });
 
