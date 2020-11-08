@@ -13,9 +13,8 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     var radios;
 
     addQuestion();
-    submitbutton = document.getElementsByClassName('image-question')[0];
-      submitbutton.onclick = function(event) {
-        event.preventDefault();
+    submitbutton = document.getElementsByClassName('answerbutton')[0];
+      submitbutton.onclick = function() {
         form = document.getElementById("quizform");
         // get list of radio buttons with specified name
         radios = form.elements["quiz"];
@@ -173,7 +172,8 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
           var button = document.createElement("BUTTON");
           button.classList.add("answerbutton");
-          button.innerText = "Suivant"
+          button.innerText = "Suivant";
+          button.type = "button";
           
 
           /////////////////
