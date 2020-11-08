@@ -9,7 +9,7 @@ document.getElementById("sendScoreButton").addEventListener("click", function(){
         return;
     }else {
         var nameReg = /^[A-Za-z]*$/;
-        if (!nameReg.test($name)) {
+        if (!nameReg.test(username)) {
             alert("Veuillez ne mettre que des lettres dans votre Pseudo")
             return;
         } else {
