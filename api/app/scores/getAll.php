@@ -26,7 +26,7 @@
 
         $data = pg_fetch_all($result);
 
-        if (!$data["scores"]) {
+        if (!$data) {
                     
             //The returned result is empty
             $dataSet = [
