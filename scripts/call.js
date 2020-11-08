@@ -169,7 +169,8 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           form.appendChild(button);
 
           submitbutton = document.getElementsByClassName('answerbutton')[0];
-          result = button.onclick = function(event) {
+          var result;
+          button.onclick = function(event) {
             event.preventDefault()
             var val;
             form = document.getElementById("quizform");
@@ -184,9 +185,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
                 }
             }
             if (val == response[key].answer) {
-              return true
+              result = true;
             } else {
-              return false
+              result = false;
             }
           }
           console.log(result);
