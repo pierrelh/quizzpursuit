@@ -5,6 +5,7 @@ function setLeaderboard(users) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    var server = "https://" + window.location.hostname;
     $.ajax({
         url: server + "/functions/score/getLeaderboard.php",
         type: "POST",
