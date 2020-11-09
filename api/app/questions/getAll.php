@@ -1,5 +1,6 @@
 <?php
-
+    header("Access-Control-Allow-Origin: *");
+    
     //Create the connexion to the db
     include_once($_SERVER['DOCUMENT_ROOT']."/functions/connexion.php");
     $db = connect();
