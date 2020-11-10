@@ -34,6 +34,8 @@
                 "error_message" => "Your request as been successfully treated but the returned data is empty"
             ];
 
+        }else {
+            print $data;
         }
 
 
