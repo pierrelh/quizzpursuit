@@ -178,6 +178,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           button.classList.add("answerbutton");
           button.innerText = "Suivant";
           button.type = "button";
+          button.id = "nextButton";
           
 
           /////////////////
