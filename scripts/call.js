@@ -67,7 +67,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           ///////////////////
           // Fourth answer //
           ///////////////////        
-          document.getElementById("reponse1").innerText = response[key].fourth_choice;
+          document.getElementById("reponse4").innerText = response[key].fourth_choice;
 
         }
 
