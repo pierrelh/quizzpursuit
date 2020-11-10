@@ -44,6 +44,6 @@
         }
     }
 
-    print json_encode($dataSet);
+    print json_encode($dataSet, JSON_UNESCAPED_UNICODE);
 
 ?>
