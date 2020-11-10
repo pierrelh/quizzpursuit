@@ -1,6 +1,5 @@
 <?php
     header("Access-Control-Allow-Origin: *");
-    header('content-type:text/html;charset=utf-8');
 
     //Create the connexion to the db
     include_once($_SERVER['DOCUMENT_ROOT']."/functions/connexion.php");
@@ -45,6 +44,6 @@
         }
     }
 
-    print json_encode($dataSet);
+    print json_encode($dataSet, JSON_UNESCAPED_UNICODE);
 
 ?>
