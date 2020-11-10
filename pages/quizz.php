@@ -14,7 +14,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <label class="radiocontainer" id="label2" for="2">
-                    <span id="reponse2">Réponse 2</span>
+                        <span id="reponse2">Réponse 2</span>
                         <input required type="radio" name="quiz" id="2" value="2">
                         <span class="checkmark"></span>
                     </label>
@@ -29,7 +29,7 @@
                         <span class="checkmark"></span>
                     </label>
 
-                    <button id="nextButton" class="answerbutton" type="button">Suivant</button>
+                    <button id="nextButton" class="answerbutton" type="submit">Suivant</button>
                 </form>
             </div>
             
