@@ -7,7 +7,7 @@
             <div class="score-section">
                 <h2>Votre score</h2>
                 <div class="score-box">
-                    <p id="userScore" class="score">90</p>
+                    <p id="userScore" class="score"><?php echo $_COOKIE['SESSION_SCORE'] ?></p>
                     <p>%</p>
                 </div>
             </div>

@@ -39,7 +39,7 @@ document.getElementById("sendScoreButton").addEventListener("click", function(){
                             let date = new Date(Date.now() + 86400000);
                             date = date.toUTCString();
 
-                            document.cookie = "SESSION_PSEUDO=" + username + "; path=/; expires=" + date;
+                            document.cookie = "SESSION_PSEUDO=" + username + "; SameSite=Strict; path=/; expires=" + date;
 
                             //Redirect the user to the main page
                             window.location.assign(server);
