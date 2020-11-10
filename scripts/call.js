@@ -31,15 +31,14 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
       key++
       if (key == 10) {
         var score = count / key * 100;
-        console.log(score);
         //Create the cookie to remember the user's username
-        // let date = new Date(Date.now() + 60);
-        // date = date.toUTCString();
+        let date = new Date(Date.now() + 60);
+        date = date.toUTCString();
         
-        // document.cookie = "SESSION_SCORE=" + count + "; SameSite=Strict; path=/; expires=" + date;
+        document.cookie = "SESSION_SCORE=" + score + "; SameSite=Lax; path=/; expires=" + date;
         
         //Redirect the user to the main page
-        // window.location.assign(server + "/results");
+        window.location.assign(server + "/results");
         
       }
       addQuestion();
@@ -51,24 +50,16 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
           // Replace dummy question with current question in loop
           document.getElementById('quizzQuestion').innerHTML = response[key].question;
 
-          //////////////////
-          // First answer //
-          //////////////////
+          // First answer
           document.getElementById("reponse1").innerText = response[key].first_choice;
 
-          ///////////////////
-          // Second answer //
-          ///////////////////
+          // Second answer
           document.getElementById("reponse2").innerText = response[key].second_choice;
 
-          //////////////////
-          // Third answer //
-          //////////////////
+          // Third answer
           document.getElementById("reponse3").innerText = response[key].third_choice;
 
-          ///////////////////
-          // Fourth answer //
-          ///////////////////        
+          // Fourth answer      
           document.getElementById("reponse4").innerText = response[key].fourth_choice;
 
         }
