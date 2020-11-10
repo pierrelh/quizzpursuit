@@ -29,7 +29,7 @@
                         <span class="checkmark"></span>
                     </label>
 
-                    <button id="nextButton" class="answerbutton" type="submit">Suivant</button>
+                    <button id="nextButton" class="answerbutton" type="button">Suivant</button>
                 </form>
             </div>
             
