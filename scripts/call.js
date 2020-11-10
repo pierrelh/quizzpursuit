@@ -31,14 +31,15 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
       key++
       if (key == 10) {
         var score = count / key * 100;
+        console.log(score);
         //Create the cookie to remember the user's username
-        let date = new Date(Date.now() + 60);
-        date = date.toUTCString();
+        // let date = new Date(Date.now() + 60);
+        // date = date.toUTCString();
         
-        document.cookie = "SESSION_SCORE=" + score + "; SameSite=Strict; path=/; expires=" + date;
+        // document.cookie = "SESSION_SCORE=" + count + "; SameSite=Strict; path=/; expires=" + date;
         
         //Redirect the user to the main page
-        window.location.assign(server + "/results");
+        // window.location.assign(server + "/results");
         
       }
       addQuestion();
