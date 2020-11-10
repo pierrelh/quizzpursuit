@@ -21,7 +21,7 @@
                         <input type="radio" name="quiz" id="4" value="4">
                     </label>
 
-                    <button class="answerbutton" type="submit">Suivant</button>
+                    <button id="nextButton" class="answerbutton" type="submit">Suivant</button>
                 </form>
             </div>
             

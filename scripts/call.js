@@ -13,7 +13,9 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     var radios;
 
     addQuestion();
-    submitbutton = document.getElementsByClassName('image-question')[0];
+    
+    document.getElementById("nextButton").addEventListener("click", function(event){
+      event.preventDefault();
       submitbutton.onclick = function() {
         form = document.getElementById("quizform");
         // get list of radio buttons with specified name
@@ -36,6 +38,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
         }
         addQuestion();
       }
+    });
       
     function addQuestion()
     {
