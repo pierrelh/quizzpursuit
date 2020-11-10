@@ -1,7 +1,3 @@
-document.getElementById("quizform").addEventListener("click", function(event){
-  event.preventDefault();
-});
-
 // Fetch data from PHP file
 var server = "https://" + window.location.hostname;
 fetch(server + "/functions/getQuestions/getQuestions.php")
