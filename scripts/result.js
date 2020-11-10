@@ -1,7 +1,7 @@
 //Prevent form default action
 document.getElementById("sendScore").addEventListener("click", function(event){
-    event.preventDefault()
-  });
+    event.preventDefault();
+});
 
 //When form is send
 document.getElementById("sendScoreButton").addEventListener("click", function(){
