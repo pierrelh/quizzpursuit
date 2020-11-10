@@ -32,10 +32,10 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
       if (key == 10) {
         var score = count / key * 100;
         //Create the cookie to remember the user's username
-        let date = new Date(Date.now() + 60);
+        let date = new Date(Date.now() + 3600);
         date = date.toUTCString();
         
-        document.cookie = "SESSION_SCORE=" + score + "; SameSite=Lax; path=/; expires=" + date;
+        document.cookie = "SESSION_SCORE='" + score + "'; SameSite=Lax; path=/; expires=" + date;
         
         //Redirect the user to the main page
         window.location.assign(server + "/results");
