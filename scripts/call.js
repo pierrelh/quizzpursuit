@@ -23,6 +23,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
       for (var i=0, len=radios.length; i<len; i++) {
           if ( radios[i].checked ) { // radio checked?
               val = radios[i].value; // if so, hold its value in val
+              radios[i].checked = false; //reseting the checkmark
               break; // and break out of for loop
           }
       }
