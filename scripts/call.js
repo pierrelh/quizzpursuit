@@ -4,8 +4,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
   .then((response) => response.json())
   .then(function (response) {
 
-    console.log(response);
-
     // Loop in json
     var key = 0;
     var count = 0
@@ -27,13 +25,21 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
               break; // and break out of for loop
           }
       }
-      console.log(response[key].answer);
       if (val == response[key].answer) {
         count++
       }
       key++
       if (key == 10) {
-        window.alert("Le score est de " + count + "/10");
+        var score = count / key * 100;
+        //Create the cookie to remember the user's username
+        let date = new Date(Date.now() + 60);
+        date = date.toUTCString();
+        
+        document.cookie = "SESSION_SCORE=" + score + "; path=/; expires=" + date;
+        
+        //Redirect the user to the main page
+        window.location.assign(server + "/results");
+        
       }
       addQuestion();
     });
