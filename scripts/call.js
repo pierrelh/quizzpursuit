@@ -71,9 +71,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
 
         }
 
-      }
-
-      
+      }    
      
   });
 
