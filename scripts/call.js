@@ -1,3 +1,7 @@
+document.getElementById("quizform").addEventListener("click", function(event){
+  event.preventDefault();
+});
+
 // Fetch data from PHP file
 var server = "https://" + window.location.hostname;
 fetch(server + "/functions/getQuestions/getQuestions.php")
@@ -15,29 +19,26 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     addQuestion();
     
     document.getElementById("nextButton").addEventListener("click", function(event){
-      event.preventDefault();
-      submitbutton.onclick = function() {
-        form = document.getElementById("quizform");
-        // get list of radio buttons with specified name
-        radios = form.elements["quiz"];
+      form = document.getElementById("quizform");
+      // get list of radio buttons with specified name
+      radios = form.elements["quiz"];
         
-        // loop through list of radio buttons
-        for (var i=0, len=radios.length; i<len; i++) {
-            if ( radios[i].checked ) { // radio checked?
-                val = radios[i].value; // if so, hold its value in val
-                break; // and break out of for loop
-            }
-        }
-        console.log(response[key].answer);
-        if (val == response[key].answer) {
-          count++
-        }
-        key++
-        if (key == 10) {
-          window.alert("Le score est de " + count + "/10");
-        }
-        addQuestion();
+      // loop through list of radio buttons
+      for (var i=0, len=radios.length; i<len; i++) {
+          if ( radios[i].checked ) { // radio checked?
+              val = radios[i].value; // if so, hold its value in val
+              break; // and break out of for loop
+          }
       }
+      console.log(response[key].answer);
+      if (val == response[key].answer) {
+        count++
+      }
+      key++
+      if (key == 10) {
+        window.alert("Le score est de " + count + "/10");
+      }
+      addQuestion();
     });
       
     function addQuestion()
