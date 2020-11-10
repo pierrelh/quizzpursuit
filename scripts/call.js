@@ -35,7 +35,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
         let date = new Date(Date.now() + 60);
         date = date.toUTCString();
         
-        document.cookie = "SESSION_SCORE=" + score + "; path=/; expires=" + date;
+        document.cookie = "SESSION_SCORE=" + score + "; SameSite=Strict; path=/; expires=" + date;
         
         //Redirect the user to the main page
         window.location.assign(server + "/results");
@@ -47,8 +47,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     function addQuestion()
     {
         if (response.hasOwnProperty(key)) {
-          console.log(response[key].question);
-          
           // Replace dummy question with current question in loop
           document.getElementById('quizzQuestion').innerHTML = response[key].question;
 
