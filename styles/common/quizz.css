@@ -70,3 +70,11 @@
 .answerbutton:hover {
     background-color: #ec524b;
 }
+
+/* ------------ Responsive ------------ */
+
+@media screen and (max-width: 390px) {
+    .quizz-body .image-question {
+        display: none;
+    }
+}
