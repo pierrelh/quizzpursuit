@@ -14,14 +14,13 @@
                     Leaderboard
                     <span class="mdi mdi-trophy"></span>
                 </h2>
-
                 <ul id="leaderboardList" class=leaderboard-list>
 
                 </ul>
             </div>
 
             <div class="other-quizz">
-                <a href="#">Autres quizz</a>
+                <a id="otherQuizz" href="#">Autres quizz</a>
             </div>
 
         </div>
