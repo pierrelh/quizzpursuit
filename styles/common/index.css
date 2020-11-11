@@ -107,6 +107,10 @@
     border-bottom: solid 3px black;
 }
 
+.other-quizz {
+    margin-top: 50px;
+}
+
 .other-quizz a {
     background-color: black;
     padding: 12px 20px;
