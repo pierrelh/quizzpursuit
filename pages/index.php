@@ -1,7 +1,8 @@
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <div class="homepage-body">
 
             <div>
-                <img class="image-start" src="../../images/quizz1.svg" alt="">
+                <img class="image-start" src="<?php echo $link ?>/images/quizz1.svg" alt="">
             </div>
             <div class="start-button">
                 <a href="<?php echo $link ?>/quizz">Lancer un <span>quizz</span></a>
@@ -13,8 +14,9 @@
                     Leaderboard
                     <span class="mdi mdi-trophy"></span>
                 </h2>
-                <ul class=leaderboard-list>
-                    <li>#1 username</li>
+
+                <ul id="leaderboardList" class=leaderboard-list>
+
                 </ul>
             </div>
 
@@ -25,6 +27,8 @@
         </div>
 
     </body>
+
+    <script src="<?php echo $link ?>/scripts/leaderboard.js"></script>
 
 </html>
 
