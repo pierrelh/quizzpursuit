@@ -15,16 +15,11 @@
                 </h2>
                 <ul class=leaderboard-list>
                     <li>#1 username</li>
-                    <li>#2 username</li>
-                    <li>#3 username</li>
-                    <li>#4 username</li>
-                    <li>#5 username</li>
-                    <li>#6 username</li>
-                    <li>#7 username</li>
-                    <li>#8 username</li>
-                    <li>#9 username</li>
-                    <li>#10 username</li>
                 </ul>
+            </div>
+
+            <div class="other-quizz">
+                <a href="#">Autres quizz</a>
             </div>
 
         </div>

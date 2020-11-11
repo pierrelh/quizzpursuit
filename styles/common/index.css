@@ -107,6 +107,22 @@
     border-bottom: solid 3px black;
 }
 
+.other-quizz a {
+    background-color: black;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.other-quizz a:hover {
+    background-color: #ec524b;
+}
+
 /* ------------ Responsive ------------ */
 
 @media screen and (max-width: 390px) {
