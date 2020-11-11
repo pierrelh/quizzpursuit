@@ -12,14 +12,14 @@
     font-size: 25px;
     line-height: 30px;
     font-weight: bold;
-    margin: 30px 40px 20px 40px;
+    margin: 15px 40px 20px 40px;
     max-width: 650px;
 }
 
 .quizz-body .image-question {
     width: 220px;
     height: auto;
-    margin-top: 15px;
+    margin: 15px 0px;
 }
 
 .quizz-body .answers {
