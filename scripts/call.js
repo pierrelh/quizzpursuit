@@ -25,7 +25,11 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
               break; // and break out of for loop
           }
       }
-      if (val == response[key].answer) {
+      //Break if user asn't choose an answer
+      if (val == undefined) {
+        alert("Veuillez choisir une réponse.")
+        return;
+      }else if (val == response[key].answer) {
         count++
       }
       key++
