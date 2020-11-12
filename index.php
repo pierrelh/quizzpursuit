@@ -16,18 +16,25 @@
       require __DIR__ . '/pages/quizz.php';
       break;
     
-        //Quizz page
-    case '/autres-quizz':
-    case '/autres-quizz/':
+    //Other quizz page
+    case '/other-quizz':
+    case '/other-quizz/':
       require __DIR__ . '/pages/header.php';
-      require __DIR__ . '/pages/autres-quizz.php';
+      require __DIR__ . '/pages/other-quizz.php';
       break;
 
-    //Quizz page
+    //Results page
     case '/results':
     case '/results/':
       require __DIR__ . '/pages/header.php';
       require __DIR__ . '/pages/results.php';
+      break;
+    
+    //Other results page
+    case '/other-results':
+    case '/other-results/':
+      require __DIR__ . '/pages/header.php';
+      require __DIR__ . '/pages/other-results.php';
       break;
 
     //Get a random question API

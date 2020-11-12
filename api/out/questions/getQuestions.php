@@ -7,8 +7,12 @@
     foreach ($links as $value) {
         $raw = file_get_contents($value);
         $json = json_decode($raw);
-        $result = get_object_vars ($json);
-        array_push($questions, $result["questions"]);
+        $result = get_object_vars($json);
+        foreach ($result as $key => $value) {
+            $result = get_object_vars($key);
+            array_push($questions, $result);
+        }
+        
     }
     print json_encode($questions);
 
