@@ -4,6 +4,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
   .then((response) => response.json())
   .then(function (response) {
 
+    console.log(response.length);
     // Loop in json
     var key = 0;
     var count = 0
