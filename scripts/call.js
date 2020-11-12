@@ -4,7 +4,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
   .then((response) => response.json())
   .then(function (response) {
 
-    console.log(response.length);
     // Loop in json
     var key = 0;
     var count = 0
@@ -34,7 +33,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
         count++
       }
       key++
-      if (key == 10) {
+      if (key == response.length) {
         var score = count / key * 100;
         //Create the cookie to remember the user's username
         let date = new Date(Date.now() + 3600);
