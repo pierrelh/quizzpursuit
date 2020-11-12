@@ -6,67 +6,67 @@ fetch(server + "/api/out/questions/getQuestions.php")
 
     console.log(response);
 
-    // // Loop in json
-    // var key = 0;
-    // var count = 0
-    // var val;
-    // var radios;
+    // Loop in json
+    var key = 0;
+    var count = 0
+    var val;
+    var radios;
 
-    // addQuestion();
+    addQuestion();
     
-    // document.getElementById("nextButton").addEventListener("click", function(event){
-    //   form = document.getElementById("quizform");
-    //   // get list of radio buttons with specified name
-    //   radios = form.elements["quiz"];
+    document.getElementById("nextButton").addEventListener("click", function(event){
+      form = document.getElementById("quizform");
+      // get list of radio buttons with specified name
+      radios = form.elements["quiz"];
         
-    //   // loop through list of radio buttons
-    //   for (var i=0, len=radios.length; i<len; i++) {
-    //       if ( radios[i].checked ) { // radio checked?
-    //           val = radios[i].value; // if so, hold its value in val
-    //           radios[i].checked = false; //reseting the checkmark
-    //           break; // and break out of for loop
-    //       }
-    //   }
-    //   if (val == response[key].answer) {
-    //     count++
-    //   }
-    //   key++
-    //   if (key == 10) {
-    //     var score = count / key * 100;
-    //     //Create the cookie to remember the user's username
-    //     let date = new Date(Date.now() + 3600);
-    //     date = date.toUTCString();
+      // loop through list of radio buttons
+      for (var i=0, len=radios.length; i<len; i++) {
+          if ( radios[i].checked ) { // radio checked?
+              val = radios[i].value; // if so, hold its value in val
+              radios[i].checked = false; //reseting the checkmark
+              break; // and break out of for loop
+          }
+      }
+      if (val == response[key].answer) {
+        count++
+      }
+      key++
+      if (key == response.length) {
+        var score = count / key * 100;
+        //Create the cookie to remember the user's username
+        let date = new Date(Date.now() + 3600);
+        date = date.toUTCString();
         
-    //     document.cookie = "SESSION_SCORE=" + score.toString() + "; SameSite=Lax; path=/; expires=" + date;
+        document.cookie = "SESSION_SCORE=" + score.toString() + "; SameSite=Lax; path=/; expires=" + date;
         
-    //     //Redirect the user to the main page
-    //     window.location.assign(server + "/results");
+        //Redirect the user to the main page
+        // window.location.assign(server + "/results");
         
-    //   }
-    //   addQuestion();
-    // });
+      }
+      addQuestion();
+    });
       
-    // function addQuestion()
-    // {
-    //     if (response.hasOwnProperty(key)) {
-    //       // Replace dummy question with current question in loop
-    //       document.getElementById('quizzQuestion').innerHTML = response[key].question;
+    function addQuestion()
+    {
+        if (response.hasOwnProperty(key)) {
+          // Replace dummy question with current question in loop
+          document.getElementById('quizzQuestion').innerHTML = response[key].question;
 
-    //       // First answer
-    //       document.getElementById("reponse1").innerText = response[key].first_choice;
+          // First answer
+          document.getElementById("reponse1").innerText = response[key].first_choice;
 
-    //       // Second answer
-    //       document.getElementById("reponse2").innerText = response[key].second_choice;
+          // Second answer
+          document.getElementById("reponse2").innerText = response[key].second_choice;
 
-    //       // Third answer
-    //       document.getElementById("reponse3").innerText = response[key].third_choice;
+          // Third answer
+          document.getElementById("reponse3").innerText = response[key].third_choice;
 
-    //       // Fourth answer      
-    //       document.getElementById("reponse4").innerText = response[key].fourth_choice;
+          // Fourth answer      
+          document.getElementById("reponse4").innerText = response[key].fourth_choice;
 
-    //     }
+        }
 
-    //   }    
+      }    
      
   });
 
