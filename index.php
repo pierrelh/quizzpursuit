@@ -8,17 +8,19 @@
       require __DIR__ . '/pages/header.php';
       require __DIR__ . '/pages/index.php';
       break;
-
-    case '/test':
-    case '/test/':
-          require __DIR__ . '/pages/test.php';
-          break;
     
     //Quizz page
     case '/quizz':
     case '/quizz/':
       require __DIR__ . '/pages/header.php';
       require __DIR__ . '/pages/quizz.php';
+      break;
+    
+        //Quizz page
+    case '/autres-quizz':
+    case '/autres-quizz/':
+      require __DIR__ . '/pages/header.php';
+      require __DIR__ . '/pages/autres-quizz.php';
       break;
 
     //Quizz page

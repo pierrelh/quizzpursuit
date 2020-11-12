@@ -48,7 +48,7 @@
         $data = [
             "questionID" => $question['id'],
             "question" => $question['question'],
-            "answer" => [
+            "answers" => [
                 $firstAnswer,
                 $secondAnswer,
                 $thirdAnswer,
