@@ -4,6 +4,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
   .then((response) => response.json())
   .then(function (response) {
 
+    console.log(response.length);
     // Loop in json
     var key = 0;
     var count = 0
@@ -25,7 +26,11 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
               break; // and break out of for loop
           }
       }
-      if (val == response[key].answer) {
+      //Break if user asn't choose an answer
+      if (val == undefined) {
+        alert("Veuillez choisir une réponse.")
+        return;
+      }else if (val == response[key].answer) {
         count++
       }
       key++

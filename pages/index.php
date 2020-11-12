@@ -20,7 +20,7 @@
             </div>
 
             <div class="other-quizz">
-                <a id="otherQuizz" href="#">Autres quizz</a>
+                <a id="otherQuizz" href="<?php echo $link ?>/autres-quizz">Autres quizz</a>
             </div>
 
         </div>
