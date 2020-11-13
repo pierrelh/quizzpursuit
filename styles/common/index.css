@@ -15,7 +15,7 @@
 }
 
 .homepage-body .start-button {
-    margin: 40px 20px 45px 20px;
+    margin: 40px 20px 25px 20px;
 }
 
 .homepage-body .start-button a {
@@ -48,6 +48,13 @@
 .homepage-body .start-button a:hover span {
     color: #ec524b;
     text-shadow: -7px 5px white;
+}
+
+.homepage-body .description {
+    margin: 0px 20px 35px 20px;
+    max-width: 400px;
+    color: black;
+    font-size: 16px;
 }
 
 .homepage-body>.leaderboard>h2 {

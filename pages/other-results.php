@@ -21,6 +21,10 @@
                     <p>%</p>
                 </div>
             </div>
+
+            <div class="home-button">
+                <a href="<?php echo $link ?>">Revenir à l'accueil</a>
+            </div>
             
         </div>
 
