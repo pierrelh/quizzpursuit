@@ -1,9 +1,18 @@
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <?php
+        include_once($_SERVER['DOCUMENT_ROOT']."/assets/header-index.php");
+    ?>
+    <body>
+        <div class="page-logo">
+            <h1><a href="<?php echo $link ?>">Quizz Pursuit</a></h1>
+        </div>
+        
         <div class="homepage-body">
-
             <div>
                 <img class="image-start" src="<?php echo $link ?>/images/quizz1.svg" alt="">
             </div>
+            
             <div class="start-button">
                 <a href="<?php echo $link ?>/quizz">Lancer un <span>quizz</span></a>
             </div>
@@ -14,9 +23,7 @@
                     Leaderboard
                     <span class="mdi mdi-trophy"></span>
                 </h2>
-                <ul id="leaderboardList" class=leaderboard-list>
-
-                </ul>
+                <ul id="leaderboardList" class=leaderboard-list></ul>
             </div>
 
             <div class="other-quizz">
@@ -24,10 +31,10 @@
             </div>
 
         </div>
+        
+        <script src="<?php echo $link ?>/scripts/leaderboard.js"></script>
 
     </body>
-
-    <script src="<?php echo $link ?>/scripts/leaderboard.js"></script>
 
 </html>
 
