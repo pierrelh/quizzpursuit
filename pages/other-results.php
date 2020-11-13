@@ -22,8 +22,8 @@
                 </div>
             </div>
 
-            <div class="btn">
-                <a href="<?php echo $link ?>">Revenir à l'accueil</a>
+            <div>
+                <a class="btn" href="<?php echo $link ?>">Revenir à l'accueil</a>
             </div>
             
         </div>
