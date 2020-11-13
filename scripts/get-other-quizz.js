@@ -57,15 +57,16 @@ fetch(server + "/api/out/questions/getQuestions.php")
                 document.getElementById('quizzQuestion').innerHTML = response[key].question;
 
                 // get list of radio buttons with specified name
-                labels = document.getElementsByName("formLabel");
+                var labels = document.getElementsByName("formLabel");
 
                 var answers = response[key].answers;
 
                 for (let index = 0; index < labels.length; index++) {
-                    var id = "reponse" + (index + 1);
                     if (answers[index].answer != undefined) { //Check if there is an answer for the label
+                        var id = "reponse" + (index + 1);
                         document.getElementById(id).innerText = answers[index].answer; //Fill the label with the answer
                     }else {
+                        var id = "label" + (index + 1);
                         document.getElementById(id).remove(); //Delete the label if there is no answer
                     }
 
@@ -74,6 +75,6 @@ fetch(server + "/api/out/questions/getQuestions.php")
             }
 
         }
-        
+
   });
 
