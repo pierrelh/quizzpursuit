@@ -67,13 +67,13 @@ fetch(server + "/api/out/questions/getQuestions.php")
                 var answers = response[key].answers;
 
                 for (var index = 0; index < labels.length; index++) {
+                    var labelId = "label" + (index + 1);
                     if (answers[index] != undefined) { //Check if there is an answer for the label
-                        var id = "reponse" + (index + 1);
-                        document.getElementById(id).innerText = answers[index].answer; //Fill the label with the answer
-                        document.getElementById(id).style.display = "flex"; //Hide the label if there is no answer
+                        var spanId = "reponse" + (index + 1);
+                        document.getElementById(spanId).innerText = answers[index].answer; //Fill the label with the answer
+                        document.getElementById(labelId).style.display = "flex"; //Hide the label if there is no answer
                     }else {
-                        var id = "label" + (index + 1);
-                        document.getElementById(id).style.display = "none"; //Hide the label if there is no answer
+                        document.getElementById(labelId).style.display = "none"; //Hide the label if there is no answer
                     }
 
                 }
