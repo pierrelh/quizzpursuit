@@ -49,20 +49,26 @@ fetch(server + "/api/out/questions/getQuestions.php")
     function addQuestion()
     {
         if (response.hasOwnProperty(key)) {
-          // Replace dummy question with current question in loop
-          document.getElementById('quizzQuestion').innerHTML = response[key].question;
+            // Replace dummy question with current question in loop
+            document.getElementById('quizzQuestion').innerHTML = response[key].question;
 
-          // First answer
-          document.getElementById("reponse1").innerText = response[key].first_choice;
+            var answers = response[key].answers;
+            for (let index = 0; index < answers.length; index++) {
+                var id = "reponse" + (index + 1);
+                document.getElementById(id).innerText = answers[index].answer;
+                
+            }
+        //   // First answer
+        //   document.getElementById("reponse1").innerText = response[key].first_choice;
 
-          // Second answer
-          document.getElementById("reponse2").innerText = response[key].second_choice;
+        //   // Second answer
+        //   document.getElementById("reponse2").innerText = response[key].second_choice;
 
-          // Third answer
-          document.getElementById("reponse3").innerText = response[key].third_choice;
+        //   // Third answer
+        //   document.getElementById("reponse3").innerText = response[key].third_choice;
 
-          // Fourth answer      
-          document.getElementById("reponse4").innerText = response[key].fourth_choice;
+        //   // Fourth answer      
+        //   document.getElementById("reponse4").innerText = response[key].fourth_choice;
 
         }
 
