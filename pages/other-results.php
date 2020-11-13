@@ -16,6 +16,4 @@
 
     </body>
 
-    <script src="<?php echo $link ?>/scripts/result.js"></script>
-
 </html>
