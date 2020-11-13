@@ -34,7 +34,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
       }
       key++
       if (key == response.length) {
-        var score = count / key * 100;
+        var score = Math.round(count / key * 100);
         //Create the cookie to remember the user's username
         let date = new Date(Date.now() + 3600);
         date = date.toUTCString();
