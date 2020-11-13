@@ -1,23 +1,21 @@
 // Fetch data from PHP file
 var server = "https://" + window.location.hostname;
 fetch(server + "/api/out/questions/getQuestions.php")
-    .then((response) => response.json())
-    .then(function (response) {
-
-        console.log(response);
-
-        // Loop in json
-        var key = 0;
-        var count = 0
-        var val;
-        var radios;
-
-        addQuestion();
+  .then((response) => response.json())
+  .then(function (response) {
         
-        document.getElementById("nextButton").addEventListener("click", function(event){
-            form = document.getElementById("quizform");
-            // get list of radio buttons with specified name
-            radios = form.elements["quiz"];
+    // Loop in json
+    var key = 0;
+    var count = 0
+    var val;
+    var radios;
+
+    addQuestion();
+        
+    document.getElementById("nextButton").addEventListener("click", function(event) {
+        form = document.getElementById("quizform");
+        // get list of radio buttons with specified name
+        radios = form.elements["quiz"];
                 
             // loop through list of radio buttons
             for (var i = 0, len = radios.length; i < len; i++) {
@@ -38,7 +36,7 @@ fetch(server + "/api/out/questions/getQuestions.php")
             }
 
             key++
-            if (key == response.length) {
+            if (key == response.length) { //Chek if user finished the quizz
                 var score = Math.round(count / key * 100);
                 //Create the cookie to remember the user's username
                 let date = new Date(Date.now() + 3600);
@@ -55,8 +53,8 @@ fetch(server + "/api/out/questions/getQuestions.php")
             addQuestion();
         });
         
-        function addQuestion()
-        {
+        function addQuestion() {
+
             if (response.hasOwnProperty(key)) {
                 // Replace dummy question with current question in loop
                 document.getElementById('quizzQuestion').innerHTML = response[key].question;
@@ -68,6 +66,7 @@ fetch(server + "/api/out/questions/getQuestions.php")
 
                 for (var index = 0; index < labels.length; index++) {
                     var labelId = "label" + (index + 1);
+
                     if (answers[index] != undefined) { //Check if there is an answer for the label
                         var spanId = "reponse" + (index + 1);
                         document.getElementById(spanId).innerText = answers[index].answer; //Fill the label with the answer
@@ -82,5 +81,5 @@ fetch(server + "/api/out/questions/getQuestions.php")
 
         }
 
-  });
+});
 

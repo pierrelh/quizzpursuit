@@ -33,7 +33,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
         count++
       }
       key++
-      if (key == response.length) {
+      if (key == response.length) { //Check if user finished the quizz
         var score = Math.round(count / key * 100);
         //Create the cookie to remember the user's username
         let date = new Date(Date.now() + 3600);

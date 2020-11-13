@@ -1,5 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <?php
+        include_once($_SERVER['DOCUMENT_ROOT']."/assets/header-results.php");
+    ?>
+    <body>
+
+        <div class="page-logo">
+            <h1><a href="<?php echo $link ?>">Quizz Pursuit</a></h1>
+        </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+        <script src="<?php echo $link ?>/scripts/confetti.min.js"></script>
         <script>confetti.start(2500, 200, 400)</script>
 
         <div class="results-body">
@@ -22,8 +33,8 @@
             
         </div>
 
-    </body>
+        <script src="<?php echo $link ?>/scripts/result.js"></script>
 
-    <script src="<?php echo $link ?>/scripts/result.js"></script>
+    </body>
 
 </html>
