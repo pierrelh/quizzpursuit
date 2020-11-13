@@ -20,7 +20,7 @@ fetch(server + "/api/out/questions/getQuestions.php")
             radios = form.elements["quiz"];
                 
             // loop through list of radio buttons
-            for (var i=0, len=radios.length; i<len; i++) {
+            for (var i = 0, len = radios.length; i < len; i++) {
                 if ( radios[i].checked ) { // radio checked?
                     val = parseInt(radios[i].value) - 1; // if so, hold its value in val
                     radios[i].checked = false; //reseting the checkmark
@@ -39,7 +39,7 @@ fetch(server + "/api/out/questions/getQuestions.php")
 
             key++
             if (key == response.length) {
-                var score = count / key * 100;
+                var score = Math.round(count / key * 100);
                 //Create the cookie to remember the user's username
                 let date = new Date(Date.now() + 3600);
                 date = date.toUTCString();
@@ -65,8 +65,9 @@ fetch(server + "/api/out/questions/getQuestions.php")
                 var labels = document.getElementsByName("formLabel");
 
                 var answers = response[key].answers;
+                var labelsNumber = labels.length;
 
-                for (let index = 0; index < labels.length; index++) {
+                for (var index = 0; index < labelsNumber; index++) {
                     if (answers[index] != undefined) { //Check if there is an answer for the label
                         var id = "reponse" + (index + 1);
                         document.getElementById(id).innerText = answers[index].answer; //Fill the label with the answer
