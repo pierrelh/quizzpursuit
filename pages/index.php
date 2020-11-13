@@ -31,7 +31,7 @@
             </div>
 
             <div class="other-quizz">
-                <a id="otherQuizz" href="<?php echo $link ?>/other-quizz">Autres quizz</a>
+                <a id="otherQuizz" class="btn" href="<?php echo $link ?>/other-quizz">Autres quizz</a>
             </div>
 
             <div class="description other">

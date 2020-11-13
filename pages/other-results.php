@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="home-button">
+            <div class="btn">
                 <a href="<?php echo $link ?>">Revenir à l'accueil</a>
             </div>
             
