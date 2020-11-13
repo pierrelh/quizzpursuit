@@ -30,7 +30,6 @@ fetch(server + "/api/out/questions/getQuestions.php")
 
             var answers = response[key].answers;
             if (answers[val].isCorrect) {
-                console.log("correct");
                 count++
             }
 
@@ -47,7 +46,7 @@ fetch(server + "/api/out/questions/getQuestions.php")
                 window.location.assign(server + "/other-results");
                 
             }
-            
+
             addQuestion();
         });
         
@@ -57,27 +56,24 @@ fetch(server + "/api/out/questions/getQuestions.php")
                 // Replace dummy question with current question in loop
                 document.getElementById('quizzQuestion').innerHTML = response[key].question;
 
+                // get list of radio buttons with specified name
+                labels = document.getElementsByName("formLabel");
+
                 var answers = response[key].answers;
-                for (let index = 0; index < answers.length; index++) {
+
+                for (let index = 0; index < labels.length; index++) {
                     var id = "reponse" + (index + 1);
-                    document.getElementById(id).innerText = answers[index].answer;
-                    
+                    if (answers[index].answer != undefined) { //Check if there is an answer for the label
+                        document.getElementById(id).innerText = answers[index].answer; //Fill the label with the answer
+                    }else {
+                        document.getElementById(id).remove(); //Delete the label if there is no answer
+                    }
+
                 }
-            //   // First answer
-            //   document.getElementById("reponse1").innerText = response[key].first_choice;
-
-            //   // Second answer
-            //   document.getElementById("reponse2").innerText = response[key].second_choice;
-
-            //   // Third answer
-            //   document.getElementById("reponse3").innerText = response[key].third_choice;
-
-            //   // Fourth answer      
-            //   document.getElementById("reponse4").innerText = response[key].fourth_choice;
 
             }
 
-        }    
-     
+        }
+        
   });
 
