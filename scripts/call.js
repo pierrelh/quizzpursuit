@@ -45,6 +45,8 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
         window.location.assign(server + "/results");
         
       }
+      //Reseting val
+      val = undefined;
       addQuestion();
     });
       

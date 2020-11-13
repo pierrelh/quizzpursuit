@@ -29,7 +29,11 @@ fetch(server + "/api/out/questions/getQuestions.php")
             }
 
             var answers = response[key].answers;
-            if (answers[val].isCorrect) {
+            //Break if user asn't choose an answer
+            if (val == undefined) {
+                alert("Veuillez choisir une réponse.")
+                return;
+            }else if (answers[val].isCorrect) {
                 count++
             }
 
@@ -46,7 +50,8 @@ fetch(server + "/api/out/questions/getQuestions.php")
                 window.location.assign(server + "/other-results");
                 
             }
-
+            //Reseting val
+            val = undefined
             addQuestion();
         });
         
@@ -62,7 +67,7 @@ fetch(server + "/api/out/questions/getQuestions.php")
                 var answers = response[key].answers;
 
                 for (let index = 0; index < labels.length; index++) {
-                    if (answers[index].answer != undefined) { //Check if there is an answer for the label
+                    if (answers[index] != undefined) { //Check if there is an answer for the label
                         var id = "reponse" + (index + 1);
                         document.getElementById(id).innerText = answers[index].answer; //Fill the label with the answer
                     }else {
