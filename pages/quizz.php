@@ -1,9 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <?php
+        include_once($_SERVER['DOCUMENT_ROOT']."/assets/header-quizz.php");
+    ?>
+    <body>
 
         <div class="quizz-body">
 
             <div>
-                <img class="image-question" src="../../images/question.svg" alt="deux personnes avec un point d'interrogation">
+                <img class="image-question" src="<?php echo $link ?>/images/question.svg" alt="deux personnes avec un point d'interrogation">
             </div>
+            
             <div id="quizzQuestion" class="question">Chargement...</div>
 
             <div class="answers">

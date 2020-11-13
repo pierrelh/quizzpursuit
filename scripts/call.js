@@ -4,7 +4,6 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
   .then((response) => response.json())
   .then(function (response) {
 
-    console.log(response.length);
     // Loop in json
     var key = 0;
     var count = 0
@@ -34,8 +33,8 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
         count++
       }
       key++
-      if (key == 10) {
-        var score = count / key * 100;
+      if (key == response.length) { //Check if user finished the quizz
+        var score = Math.round(count / key * 100);
         //Create the cookie to remember the user's username
         let date = new Date(Date.now() + 3600);
         date = date.toUTCString();
@@ -46,6 +45,8 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
         window.location.assign(server + "/results");
         
       }
+      //Reseting val
+      val = undefined;
       addQuestion();
     });
       
