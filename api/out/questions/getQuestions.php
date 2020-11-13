@@ -1,6 +1,6 @@
 <?php
 
-    $links = [/*https://polar-ocean-73785.herokuapp.com/api/questions/3',*/
+    $links = ['https://polar-ocean-73785.herokuapp.com/api/questions/3',
               'https://wsf-popcorn-backend.herokuapp.com/api/questions/3',
               'https://adley-quizz.herokuapp.com/api/questions/4'];
     $questions = [];
