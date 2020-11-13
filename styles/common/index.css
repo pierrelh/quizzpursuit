@@ -127,7 +127,7 @@
     margin-top: 50px;
 }
 
-.other-quizz .btn {
+.btn {
     background-color: black;
     padding: 12px 20px;
     color: white;
@@ -137,7 +137,7 @@
     text-decoration: none;
 }
 
-.other-quizz .btn:hover {
+.btn:hover {
     background-color: #ec524b;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
