@@ -26,12 +26,6 @@
     case '/results/':
       require __DIR__ . '/pages/results.php';
       break;
-    
-    //Other results page
-    case '/other-results':
-    case '/other-results/':
-      require __DIR__ . '/pages/other-results.php';
-      break;
 
     //Get a random question API
     case '/api/questions/random/':
