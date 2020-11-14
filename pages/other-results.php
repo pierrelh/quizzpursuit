@@ -21,6 +21,10 @@
                     <p>%</p>
                 </div>
             </div>
+
+            <div>
+                <a class="btn" href="<?php echo $link ?>">Revenir à l'accueil</a>
+            </div>
             
         </div>
 

@@ -17,6 +17,10 @@
                 <a href="<?php echo $link ?>/quizz">Lancer un <span>quizz</span></a>
             </div>
 
+            <div class="description">
+                <p>Quizz de culture générale : 10 questions, 4 choix de réponse, 1 seule bonne réponse !</p>
+            </div>
+
             <div class="leaderboard">
                 <h2>
                     <span class="mdi mdi-trophy"></span>
@@ -27,7 +31,11 @@
             </div>
 
             <div class="other-quizz">
-                <a id="otherQuizz" href="<?php echo $link ?>/other-quizz">Autres quizz</a>
+                <a id="otherQuizz" class="btn" href="<?php echo $link ?>/other-quizz">Autres quizz</a>
+            </div>
+
+            <div class="description other">
+                <p>Quizz sur d'autres sujets, provenant de sources différentes. Quizz Pursuit n'est pas responsable du contenu de ces quizz.</p>
             </div>
 
         </div>
