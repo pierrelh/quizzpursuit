@@ -83,6 +83,7 @@
     top: 50px;
     right: 50px;
     font-size: 14px;
+    padding: 9px 12px;
 }
 
 .quit span {
@@ -100,5 +101,10 @@
         top: 5px;
         right: 5px;
         font-size: 10px;
+        padding: 7px 10px;
+    }
+
+    .quit span {
+        margin-left: 6px;
     }
 }
