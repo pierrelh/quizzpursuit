@@ -20,8 +20,8 @@
             </div>
             
             <div class="question-box">
-                <p id="quizzQuestion" class="question">Chargement...</p>
                 <p id="questionNumber">Question 1/10</p>
+                <p id="quizzQuestion" class="question">Chargement...</p>
             </div>
 
             <div class="answers">
