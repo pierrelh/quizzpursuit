@@ -142,4 +142,8 @@
     .homepage-body .leaderboard h2 {
         font-size: 19px;
     }
+
+    .homepage-body .leaderboard {
+        max-width: 350px;
+    }
 }

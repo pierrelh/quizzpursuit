@@ -6,6 +6,7 @@
     margin: 20px 20px 20px 30px;
 }
 
+.page-logo h1,
 .page-logo h1 a {
     font-family: 'Faster One', cursive;
     font-size: 48px;
@@ -17,6 +18,5 @@
 }
 
 .page-logo h1 a:hover {
-    /* color: white; */
     text-shadow: -7px 5px transparent;
 }

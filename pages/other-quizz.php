@@ -6,15 +6,23 @@
     <body>
 
         <div class="page-logo">
-            <h1><a href="<?php echo $link ?>">Quizz Pursuit</a></h1>
+            <h1>Quizz Pursuit</h1>
         </div>
+
         <div class="quizz-body">
+
+            <div>
+                <a class="quit btn" onclick="confirmExit()" href="#">Quitter<span class="mdi mdi-close-box"></span></a>
+            </div>
 
             <div>
                 <img class="image-question" src="<?php echo $link ?>/images/question.svg" alt="deux personnes avec un point d'interrogation">
             </div>
             
-            <div id="quizzQuestion" class="question">Chargement...</div>
+            <div class="question-box">
+                <p id="questionNumber">Question 1/10</p>
+                <p id="quizzQuestion" class="question">Chargement...</p>
+            </div>
 
             <div class="answers">
                 <form role="form" id="quizform" name="quizform" method="post">
@@ -46,6 +54,7 @@
         </div>
 
         <script src="<?php echo $link ?>/scripts/get-other-quizz.js"></script>
+        <script>function confirmExit() { if (confirm("Êtes-vous sur de vouloir quitter le quizz ?\nVotre progression sera perdue.")) {window.location.href = "<?php echo $link ?>"};}</script>
 
     </body>
 </html>
