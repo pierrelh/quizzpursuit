@@ -12,7 +12,7 @@
         <div class="quizz-body">
 
             <div>
-                <a href="<?php echo $link ?>">Quitter<span class="mdi mdi-close-box"></span></a>
+                <a class="quit btn" href="<?php echo $link ?>">Quitter<span class="mdi mdi-close-box"></span></a>
             </div>
 
             <div>
@@ -20,8 +20,8 @@
             </div>
             
             <div class="question-box">
-                <p id="quizzQuestion" class="question">Chargement...</p>
                 <p id="questionNumber">Question 1/10</p>
+                <p id="quizzQuestion" class="question">Chargement...</p>
             </div>
 
             <div class="answers">
