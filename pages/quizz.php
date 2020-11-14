@@ -54,6 +54,7 @@
         </div>
 
         <script src="<?php echo $link ?>/scripts/call.js"></script>
+        <script>function myFunction() {confirm("Êtes-vous sur de vouloir quitter le quizz ? Votre progression sera perdue.");}</script>
 
     </body>
 </html>

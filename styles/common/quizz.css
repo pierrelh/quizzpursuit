@@ -77,10 +77,11 @@
     position: absolute;
     top: 50px;
     right: 50px;
+    font-size: 14px;
 }
 
 .quit span {
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 /* ------------ Responsive ------------ */
