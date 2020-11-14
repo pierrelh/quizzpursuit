@@ -56,6 +56,9 @@ fetch(server + "/api/out/questions/getQuestions.php")
         function addQuestion() {
 
             if (response.hasOwnProperty(key)) {
+                // Question number
+                document.getElementById('questionNumber').innerHTML = "Question " + (key+1) + "/10";
+
                 // Replace dummy question with current question in loop
                 document.getElementById('quizzQuestion').innerHTML = response[key].question;
 

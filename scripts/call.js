@@ -53,7 +53,7 @@ fetch(server + "/functions/getQuestions/getQuestions.php")
     function addQuestion()
     {
         if (response.hasOwnProperty(key)) {
-          // Replace dummy question with current question in loop
+          // Question number
           document.getElementById('questionNumber').innerHTML = "Question " + (key+1) + "/10";
           
           // Replace dummy question with current question in loop
