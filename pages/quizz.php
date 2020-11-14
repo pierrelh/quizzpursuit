@@ -12,10 +12,17 @@
         <div class="quizz-body">
 
             <div>
+                <a href="<?php echo $link ?>">Quitter<span class="mdi mdi-close-box"></span></a>
+            </div>
+
+            <div>
                 <img class="image-question" src="<?php echo $link ?>/images/question.svg" alt="deux personnes avec un point d'interrogation">
             </div>
             
-            <div id="quizzQuestion" class="question">Chargement...</div>
+            <div class="question-box">
+                <p id="quizzQuestion" class="question">Chargement...</p>
+                <p id="questionNumber">Question 1/10</p>
+            </div>
 
             <div class="answers">
                 <form role="form" id="quizform" name="quizform" method="post">
