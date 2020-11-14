@@ -95,4 +95,10 @@
     .quizz-body .image-question {
         display: none;
     }
+
+    .quit {
+        top: 5px;
+        right: 5px;
+        font-size: 10px;
+    }
 }
