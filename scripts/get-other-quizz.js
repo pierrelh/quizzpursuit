@@ -45,7 +45,7 @@ fetch(server + "/api/out/questions/getQuestions.php")
                 document.cookie = "SESSION_SCORE=" + score.toString() + "; SameSite=Lax; path=/; expires=" + date;
                 
                 //Redirect the user to the main page
-                window.location.assign(server + "/other-results");
+                window.location.assign(server + "/results");
                 
             }
             //Reseting val
