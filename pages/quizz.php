@@ -6,13 +6,13 @@
     <body>
 
         <div class="page-logo">
-            <h1><a href="<?php echo $link ?>">Quizz Pursuit</a></h1>
+            <h1>Quizz Pursuit</h1>
         </div>
 
         <div class="quizz-body">
 
             <div>
-                <a class="quit btn" onclick="confirmExit()" href="<?php echo $link ?>">Quitter<span class="mdi mdi-close-box"></span></a>
+                <a class="quit btn" onclick="confirmExit()" href="#">Quitter<span class="mdi mdi-close-box"></span></a>
             </div>
 
             <div>
@@ -54,7 +54,7 @@
         </div>
 
         <script src="<?php echo $link ?>/scripts/call.js"></script>
-        <script>function confirmExit() {confirm("Êtes-vous sur de vouloir quitter le quizz ? Votre progression sera perdue.");}</script>
+        <script>function confirmExit() { if (confirm("Êtes-vous sur de vouloir quitter le quizz ?\nVotre progression sera perdue.")) {window.location.href = "<?php echo $link ?>"};}</script>
 
     </body>
 </html>
