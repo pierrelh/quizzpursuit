@@ -12,7 +12,7 @@
         <div class="quizz-body">
 
             <div>
-                <a href="<?php echo $link ?>">Quitter<span class="mdi mdi-close-box"></span></a>
+                <a class="quit btn" href="<?php echo $link ?>">Quitter<span class="mdi mdi-close-box"></span></a>
             </div>
 
             <div>
