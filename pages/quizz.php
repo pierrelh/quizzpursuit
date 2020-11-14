@@ -12,7 +12,7 @@
         <div class="quizz-body">
 
             <div>
-                <a class="quit btn" href="<?php echo $link ?>">Quitter<span class="mdi mdi-close-box"></span></a>
+                <a class="quit btn" onclick="confirmExit()" href="<?php echo $link ?>">Quitter<span class="mdi mdi-close-box"></span></a>
             </div>
 
             <div>
@@ -54,7 +54,7 @@
         </div>
 
         <script src="<?php echo $link ?>/scripts/call.js"></script>
-        <script>function myFunction() {confirm("Êtes-vous sur de vouloir quitter le quizz ? Votre progression sera perdue.");}</script>
+        <script>function confirmExit() {confirm("Êtes-vous sur de vouloir quitter le quizz ? Votre progression sera perdue.");}</script>
 
     </body>
 </html>
