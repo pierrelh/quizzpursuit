@@ -9,10 +9,8 @@
         $json = json_decode($raw);
         $result = get_object_vars($json);
         $result = $result['questions'];
-        foreach ($result as $key => $value) {
-            foreach ($value as $value) {
-                array_push($questions, get_object_vars($value));
-            }
+        foreach ($result as $value) {
+            array_push($questions, get_object_vars($value));
         }
         
     }
